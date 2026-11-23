@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Nov 18 00:54:22 2026
+| Date         : Sun Nov 22 21:41:54 2026
 | Host         : Taiseer-Laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                |  883 |     0 |          0 |     32600 |  2.71 |
-|   LUT as Logic             |  763 |     0 |          0 |     32600 |  2.34 |
-|   LUT as Memory            |  120 |     0 |          0 |      9600 |  1.25 |
-|     LUT as Distributed RAM |  120 |     0 |            |           |       |
+| Slice LUTs*                | 1363 |     0 |          0 |     32600 |  4.18 |
+|   LUT as Logic             |  883 |     0 |          0 |     32600 |  2.71 |
+|   LUT as Memory            |  480 |     0 |          0 |      9600 |  5.00 |
+|     LUT as Distributed RAM |  480 |     0 |            |           |       |
 |     LUT as Shift Register  |    0 |     0 |            |           |       |
-| Slice Registers            |  274 |     0 |          0 |     65200 |  0.42 |
-|   Register as Flip Flop    |  274 |     0 |          0 |     65200 |  0.42 |
+| Slice Registers            |  470 |     0 |          0 |     65200 |  0.72 |
+|   Register as Flip Flop    |  470 |     0 |          0 |     65200 |  0.72 |
 |   Register as Latch        |    0 |     0 |          0 |     65200 |  0.00 |
 | F7 Muxes                   |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                   |    0 |     0 |          0 |      8150 |  0.00 |
@@ -61,7 +61,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 29    |          Yes |           - |        Reset |
 | 2     |          Yes |         Set |            - |
-| 243   |          Yes |       Reset |            - |
+| 439   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -71,11 +71,10 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |   63 |     0 |          0 |        75 | 84.00 |
+| Block RAM Tile    |   60 |     0 |          0 |        75 | 80.00 |
 |   RAMB36/FIFO*    |   60 |     0 |          0 |        75 | 80.00 |
 |     RAMB36E1 only |   60 |       |            |           |       |
-|   RAMB18          |    6 |     0 |          0 |       150 |  4.00 |
-|     RAMB18E1 only |    6 |       |            |           |       |
+|   RAMB18          |    0 |     0 |          0 |       150 |  0.00 |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -96,7 +95,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |    9 |     0 |          0 |       210 |  4.29 |
+| Bonded IOB                  |   10 |     0 |          0 |       210 |  4.76 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         5 |  0.00 |
@@ -151,20 +150,19 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  243 |        Flop & Latch |
-| LUT6     |  242 |                 LUT |
-| LUT4     |  187 |                 LUT |
-| LUT5     |  178 |                 LUT |
+| RAMD64E  |  480 |  Distributed Memory |
+| FDRE     |  439 |        Flop & Latch |
+| LUT6     |  290 |                 LUT |
+| LUT5     |  248 |                 LUT |
+| LUT4     |  194 |                 LUT |
 | LUT2     |  132 |                 LUT |
-| RAMD64E  |  120 |  Distributed Memory |
 | CARRY4   |  114 |          CarryLogic |
 | LUT3     |  111 |                 LUT |
 | RAMB36E1 |   60 |        Block Memory |
 | FDCE     |   29 |        Flop & Latch |
-| LUT1     |   13 |                 LUT |
-| RAMB18E1 |    6 |        Block Memory |
+| LUT1     |   14 |                 LUT |
 | OBUF     |    5 |                  IO |
-| IBUF     |    4 |                  IO |
+| IBUF     |    5 |                  IO |
 | FDSE     |    2 |        Flop & Latch |
 +----------+------+---------------------+
 
@@ -175,23 +173,26 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------------------------------+------+
 |             Ref Name             | Used |
 +----------------------------------+------+
-| mb_block_xbar_0                  |    1 |
-| mb_block_rst_clk_wiz_1_100M_0    |    1 |
-| mb_block_microblaze_0_axi_intc_0 |    1 |
-| mb_block_microblaze_0_0          |    1 |
-| mb_block_mdm_1_0                 |    1 |
-| mb_block_lmb_bram_0              |    1 |
-| mb_block_ilmb_v10_0              |    1 |
-| mb_block_ilmb_bram_if_cntlr_0    |    1 |
-| mb_block_dlmb_v10_0              |    1 |
-| mb_block_dlmb_bram_if_cntlr_0    |    1 |
-| mb_block_clk_wiz_1_0             |    1 |
+| mb_block_xbar_1                  |    1 |
+| mb_block_rst_mig_7series_0_83M_0 |    1 |
+| mb_block_mig_7series_0_0         |    1 |
+| mb_block_microblaze_0_axi_intc_1 |    1 |
+| mb_block_microblaze_0_1          |    1 |
+| mb_block_mdm_1_1                 |    1 |
 | mb_block_axi_uartlite_0_0        |    1 |
 | mb_block_axi_timer_0_0           |    1 |
 | mb_block_axi_quad_spi_0_0        |    1 |
 | mb_block_axi_gpio_0_2            |    1 |
 | mb_block_axi_gpio_0_1            |    1 |
 | mb_block_axi_gpio_0_0            |    1 |
+| mb_block_auto_pc_7               |    1 |
+| mb_block_auto_pc_6               |    1 |
+| mb_block_auto_pc_5               |    1 |
+| mb_block_auto_pc_4               |    1 |
+| mb_block_auto_pc_3               |    1 |
+| mb_block_auto_pc_2               |    1 |
+| mb_block_auto_pc_1               |    1 |
+| mb_block_auto_pc_0               |    1 |
 | hdmi_tx_0                        |    1 |
 | clk_wiz_0                        |    1 |
 +----------------------------------+------+

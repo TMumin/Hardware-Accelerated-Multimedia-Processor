@@ -10,12 +10,13 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source top_level.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 372.902 ; gain = 52.289
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 373.836 ; gain = 78.805
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/IPs'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.cache/ip 
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 438.410 ; gain = 39.730
 Command: read_checkpoint -auto_incremental -incremental C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/utils_1/imports/synth_1/top_level.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/utils_1/imports/synth_1/top_level.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -28,106 +29,138 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 142360
+INFO: [Synth 8-7075] Helper process launched with PID 166732
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1218.258 ; gain = 408.555
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1236.707 ; gain = 407.660
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_level' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'mb_block' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_2' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_2' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1612]
+INFO: [Synth 8-6157] synthesizing module 'top_level' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mb_block' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2384]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_2' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_2' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_mdm_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_mdm_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_1' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3413]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TK4492' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:251]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:251]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_0' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:251]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TK4492' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_UT2LJ' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:144]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_UT2LJ' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:144]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1ST4AV9' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:276]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1ST4AV9' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:276]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1VI1NO' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:408]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1VI1NO' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:408]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1SCR8U8' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:540]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1SCR8U8' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:540]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_2FAMHT' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:672]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_2FAMHT' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:672]
-INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1QRRYF7' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:804]
-INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1QRRYF7' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:804]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2936]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5YIJ0K' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2936]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_xbar_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2661]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2661]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_block_xbar_0' has 40 connections declared, but only 38 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2661]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_0' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1612]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2702]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_dlmb_v10_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2848]
-WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_block_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2848]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_ilmb_v10_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2894]
-WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_block_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2894]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_lmb_bram_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2919]
-WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2919]
-WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_block_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2919]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2702]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1542]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1542]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_block_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1542]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1551]
-WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1551]
-WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1551]
-WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1551]
-WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1551]
-WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_block_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1551]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1580]
-WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1580]
-WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1580]
-WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_block_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1580]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_UT2LJ' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:312]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:551]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:551]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_1' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:551]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_UT2LJ' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:312]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1ST4AV9' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:612]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_2' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_2' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_2_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:851]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:851]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_2' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:851]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1ST4AV9' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:612]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1VI1NO' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:912]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_3' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_3' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_3_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1151]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1151]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_3' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1151]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1VI1NO' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:912]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1SCR8U8' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1212]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_4' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_4' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_4_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1451]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1451]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_4' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1451]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1SCR8U8' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1212]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_2FAMHT' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1512]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_2FAMHT' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1512]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1QRRYF7' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1784]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_5' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_5' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_5_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2023]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2023]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_5' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2023]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1QRRYF7' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1784]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_3PYGGY' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2084]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_6' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_6' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_6_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2323]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2323]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_6' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2323]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_3PYGGY' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2084]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:5687]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_7' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_7_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_7' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_auto_pc_7_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'mb_block_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:5910]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'mb_block_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:5910]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_7' has 56 connections declared, but only 54 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:5910]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5YIJ0K' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:5687]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1XEVI91' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:5967]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1XEVI91' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:5967]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_4MLGLJ' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6239]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_4MLGLJ' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6239]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_xbar_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_xbar_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_1' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3413]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mig_7series_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mig_7series_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_mig_7series_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_1' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_2' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_3' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_4' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'app_sr_active' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'mb_block_mig_7series_0_0' has 69 connections declared, but only 60 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_mig_7series_0_83M_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_rst_mig_7series_0_83M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_mig_7series_0_83M_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_rst_mig_7series_0_83M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'mb_block_rst_mig_7series_0_83M_0' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3344]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_mig_7series_0_83M_0' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3344]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_mig_7series_0_83M_0' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3344]
+WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_83M' of module 'mb_block_rst_mig_7series_0_83M_0' has 10 connections declared, but only 7 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3344]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3352]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3352]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3352]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3352]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3352]
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_block_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3352]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3381]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3381]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3381]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_block_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3381]
 INFO: [Synth 8-6157] synthesizing module 'mb_block_xlconcat_0_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_0/synth/mb_block_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_xlconcat_0_0' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_0/synth/mb_block_xlconcat_0_0.v:53]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
-WARNING: [Synth 8-7071] port 'gpio_usb_keycode_1_tri_i' of module 'mb_block' is unconnected for instance 'mb_block_i' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:81]
-WARNING: [Synth 8-7071] port 'gpio_usb_keycode_1_tri_t' of module 'mb_block' is unconnected for instance 'mb_block_i' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:81]
-WARNING: [Synth 8-7023] instance 'mb_block_i' of module 'mb_block' has 14 connections declared, but only 12 given [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:81]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2384]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:106]
-WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:106]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-149840-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:124]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:124]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-151948-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'image_rom' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/image_rom.sv:23]
 INFO: [Synth 8-3876] $readmem data file 'image.mem' is read successfully [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/image_rom.sv:30]
 INFO: [Synth 8-6155] done synthesizing module 'image_rom' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/image_rom.sv:23]
@@ -145,8 +178,8 @@ INFO: [Synth 8-6157] synthesizing module 'sharpen' [C:/Users/taise/Desktop/Homew
 INFO: [Synth 8-6155] done synthesizing module 'sharpen' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/sharpen.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'emboss' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/emboss.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'emboss' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/emboss.sv:23]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:425]
-INFO: [Synth 8-6155] done synthesizing module 'top_level' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:443]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:4]
 WARNING: [Synth 8-7129] Port p2[3] in module emboss is either unconnected or has no load
 WARNING: [Synth 8-7129] Port p2[2] in module emboss is either unconnected or has no load
 WARNING: [Synth 8-7129] Port p2[1] in module emboss is either unconnected or has no load
@@ -249,46 +282,22 @@ WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1440.500 ; gain = 630.797
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1466.648 ; gain = 637.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1440.500 ; gain = 630.797
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1466.648 ; gain = 637.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1440.500 ; gain = 630.797
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1466.648 ; gain = 637.602
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1440.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1466.648 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0/mb_block_microblaze_0_0_in_context.xdc] for cell 'mb_block_i/microblaze_0'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0/mb_block_microblaze_0_0_in_context.xdc] for cell 'mb_block_i/microblaze_0'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_ilmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_ilmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0/mb_block_lmb_bram_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0/mb_block_lmb_bram_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0/mb_block_xbar_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0/mb_block_xbar_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_intc'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_intc'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block_i/mdm_1'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block_i/mdm_1'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc] for cell 'mb_block_i/clk_wiz_1'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc] for cell 'mb_block_i/clk_wiz_1'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_block_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_block_i/rst_clk_wiz_1_100M'
-Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
-Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
 Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block_i/gpio_usb_rst'
 Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block_i/gpio_usb_rst'
 Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1_in_context.xdc] for cell 'mb_block_i/gpio_usb_int'
@@ -299,152 +308,182 @@ Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/
 Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0_in_context.xdc] for cell 'mb_block_i/timer_usb_axi'
 Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0_in_context.xdc] for cell 'mb_block_i/spi_usb'
 Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0_in_context.xdc] for cell 'mb_block_i/spi_usb'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc] for cell 'mb_block_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc] for cell 'mb_block_i/mig_7series_0'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_rst_mig_7series_0_83M_0/mb_block_rst_mig_7series_0_83M_0/mb_block_rst_mig_7series_0_83M_0_in_context.xdc] for cell 'mb_block_i/rst_mig_7series_0_83M'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_rst_mig_7series_0_83M_0/mb_block_rst_mig_7series_0_83M_0/mb_block_rst_mig_7series_0_83M_0_in_context.xdc] for cell 'mb_block_i/rst_mig_7series_0_83M'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1/mb_block_microblaze_0_1_in_context.xdc] for cell 'mb_block_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1/mb_block_microblaze_0_1_in_context.xdc] for cell 'mb_block_i/microblaze_0'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xbar_1/mb_block_xbar_1/mb_block_xbar_1_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xbar_1/mb_block_xbar_1/mb_block_xbar_1_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_7/mb_block_auto_pc_7/mb_block_auto_pc_7_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_7/mb_block_auto_pc_7/mb_block_auto_pc_7_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_0/mb_block_auto_pc_0/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_0/mb_block_auto_pc_0/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_1/mb_block_auto_pc_1/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_1/mb_block_auto_pc_1/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_2/mb_block_auto_pc_2/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_2/mb_block_auto_pc_2/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_3/mb_block_auto_pc_3/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_3/mb_block_auto_pc_3/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_4/mb_block_auto_pc_4/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_4/mb_block_auto_pc_4/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_5/mb_block_auto_pc_5/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m06_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_5/mb_block_auto_pc_5/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m06_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_6/mb_block_auto_pc_6/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m07_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_6/mb_block_auto_pc_6/mb_block_auto_pc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/m07_couplers/auto_pc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_1/mb_block_microblaze_0_axi_intc_1/mb_block_microblaze_0_axi_intc_1_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_1/mb_block_microblaze_0_axi_intc_1/mb_block_microblaze_0_axi_intc_1_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_1/mb_block_mdm_1_1/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block_i/mdm_1'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_1/mb_block_mdm_1_1/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block_i/mdm_1'
+Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
 Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
 Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
 Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
 Finished Parsing XDC File [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
-Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]
-CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'Clk'.
-New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports Clk], [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:1]
-Previous: create_clock -period 10.000 [get_ports Clk], [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc:1]
-Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:27]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:28]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:29]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:30]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:31]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:32]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:33]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:34]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[7]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:35]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[6]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:36]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[5]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:37]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:38]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:39]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:40]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:41]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:42]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[7]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:43]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[6]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:44]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[5]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:45]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:46]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:47]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:48]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:49]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:50]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:51]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:52]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:53]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridA[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:54]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:55]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:56]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:57]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:58]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:59]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[5]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:60]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[6]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:61]
-WARNING: [Vivado 12-584] No ports matched 'hex_segA[7]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:62]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:63]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:64]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:65]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:66]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:67]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[5]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:68]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[6]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:69]
-WARNING: [Vivado 12-584] No ports matched 'hex_segB[7]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:70]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:71]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:72]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:73]
-WARNING: [Vivado 12-584] No ports matched 'hex_gridB[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:74]
-Finished Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_level_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[5]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[6]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'cam_d[7]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'cam_pclk'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'cam_vsync'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'cam_href'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'cam_xclk'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'cam_sioc'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'cam_siod'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'cam_pclk'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc:131]
+Finished Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_level_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:3]
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:11]
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:12]
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:13]
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:14]
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:15]
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:16]
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:17]
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:18]
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:19]
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:20]
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:21]
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:22]
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:23]
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:24]
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:25]
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:26]
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:29]
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:30]
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:31]
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:32]
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:33]
-WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:34]
-WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:35]
-WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:36]
-WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:37]
-WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:38]
-WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:39]
-WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:40]
-WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:41]
-WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:42]
-WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:43]
-WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:44]
-WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:47]
-WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:48]
-WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:49]
-WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:50]
-WARNING: [Vivado 12-584] No ports matched 'rgb0[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:53]
-WARNING: [Vivado 12-584] No ports matched 'rgb0[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:54]
-WARNING: [Vivado 12-584] No ports matched 'rgb0[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:55]
-WARNING: [Vivado 12-584] No ports matched 'rgb1[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:56]
-WARNING: [Vivado 12-584] No ports matched 'rgb1[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:57]
-WARNING: [Vivado 12-584] No ports matched 'rgb1[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:58]
-WARNING: [Vivado 12-584] No ports matched 'd0_an[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:61]
-WARNING: [Vivado 12-584] No ports matched 'd0_an[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:62]
-WARNING: [Vivado 12-584] No ports matched 'd0_an[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:63]
-WARNING: [Vivado 12-584] No ports matched 'd0_an[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:64]
-WARNING: [Vivado 12-584] No ports matched 'd0_seg[0]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:65]
-WARNING: [Vivado 12-584] No ports matched 'd0_seg[1]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:66]
-WARNING: [Vivado 12-584] No ports matched 'd0_seg[2]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:67]
-WARNING: [Vivado 12-584] No ports matched 'd0_seg[3]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:68]
-WARNING: [Vivado 12-584] No ports matched 'd0_seg[4]'. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:69]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc:69]
-Finished Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/constrs_1/imports/pin_assignment/mb_intro_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_level_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1490.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1572.742 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1490.527 ; gain = 0.000
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1572.742 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '12.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1492.086 ; gain = 682.383
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1572.750 ; gain = 743.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1492.086 ; gain = 682.383
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1572.750 ; gain = 743.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for SYS_CLK_clk_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYS_CLK_clk_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for SYS_CLK_clk_p. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYS_CLK_clk_p. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0/mb_block_mig_7series_0_0_in_context.xdc, line 103).
 Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
 Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
@@ -462,32 +501,35 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constrai
 Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/mdm_1. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/clk_wiz_1. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/axi_uartlite_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_rst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_int. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_keycode. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/timer_usb_axi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/spi_usb. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/mig_7series_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/rst_mig_7series_0_83M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/m07_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/axi_uartlite_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1492.086 ; gain = 682.383
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1572.750 ; gain = 743.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1492.086 ; gain = 682.383
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1572.750 ; gain = 743.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -503,8 +545,6 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 3     
 	                4 Bit    Registers := 44    
 	                1 Bit    Registers := 9     
-+---RAMs : 
-	               2K Bit	(640 X 4 bit)          RAMs := 8     
 +---ROMs : 
 	                    ROMs := 2     
 +---Muxes : 
@@ -529,13 +569,12 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Debug: swapped A/B pins for adder 000002356ACFA4F0
-DSP Debug: swapped A/B pins for adder 000002356ACE6B10
-DSP Debug: swapped A/B pins for adder 000002356B4D3650
+DSP Debug: swapped A/B pins for adder 000002652B6FBD10
+DSP Debug: swapped A/B pins for adder 000002652FBE4D00
+DSP Debug: swapped A/B pins for adder 000002651EF151B0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1492.086 ; gain = 682.383
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1572.750 ; gain = 743.703
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 152, Available = 150. Will try to implement using LUT-RAM. 
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -549,27 +588,19 @@ ROM: Preliminary Mapping Report
 +------------+------------+---------------+----------------+
 
 
-Block RAM: Preliminary Mapping Report (see note below)
-+------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|top_level   | window_generator_r/buffer_1/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_r/buffer_2/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_g/buffer_1/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_g/buffer_2/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_b/buffer_1/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_b/buffer_2/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-+------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
-Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
-
 Distributed RAM: Preliminary Mapping Report (see note below)
-+------------+-------------------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                          | Inference | Size (Depth x Width) | Primitives   | 
-+------------+-------------------------------------+-----------+----------------------+--------------+
-|top_level   | window_generator_i/buffer_1/mem_reg | Implied   | 1 K x 4              | RAM64M x 20  | 
-|top_level   | window_generator_i/buffer_2/mem_reg | Implied   | 1 K x 4              | RAM64M x 20  | 
-+------------+-------------------------------------+-----------+----------------------+--------------+
++------------+-------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                          | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-------------------------------------+----------------+----------------------+--------------+
+|top_level   | window_generator_b/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_b/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_g/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_g/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_r/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_r/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_i/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_i/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
++------------+-------------------------------------+----------------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -579,38 +610,31 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1522.023 ; gain = 712.320
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1572.750 ; gain = 743.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1587.828 ; gain = 778.125
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1612.281 ; gain = 783.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
-Block RAM: Final Mapping Report
-+------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|top_level   | window_generator_r/buffer_1/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_r/buffer_2/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_g/buffer_1/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_g/buffer_2/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_b/buffer_1/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|top_level   | window_generator_b/buffer_2/mem_reg | 0 K x 4(READ_FIRST)    | W |   | 0 K x 4(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-+------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
-
 Distributed RAM: Final Mapping Report
-+------------+-------------------------------------+-----------+----------------------+--------------+
-|Module Name | RTL Object                          | Inference | Size (Depth x Width) | Primitives   | 
-+------------+-------------------------------------+-----------+----------------------+--------------+
-|top_level   | window_generator_i/buffer_1/mem_reg | Implied   | 1 K x 4              | RAM64M x 20  | 
-|top_level   | window_generator_i/buffer_2/mem_reg | Implied   | 1 K x 4              | RAM64M x 20  | 
-+------------+-------------------------------------+-----------+----------------------+--------------+
++------------+-------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                          | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-------------------------------------+----------------+----------------------+--------------+
+|top_level   | window_generator_b/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_b/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_g/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_g/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_r/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_r/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_i/buffer_1/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
+|top_level   | window_generator_i/buffer_2/mem_reg | User Attribute | 1 K x 4              | RAM64M x 20  | 
++------------+-------------------------------------+----------------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -666,11 +690,8 @@ INFO: [Synth 8-7052] The timing for the instance image_rom_i/data_w_reg_1_8 (imp
 INFO: [Synth 8-7052] The timing for the instance image_rom_i/data_w_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance image_rom_i/data_w_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance image_rom_i/data_w_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance window_generator_r/buffer_1/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance window_generator_g/buffer_1/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance window_generator_b/buffer_1/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -688,37 +709,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -728,25 +749,28 @@ Report BlackBoxes:
 +------+---------------------------------+----------+
 |      |BlackBox name                    |Instances |
 +------+---------------------------------+----------+
-|1     |mb_block_xbar_0                  |         1|
-|2     |mb_block_axi_uartlite_0_0        |         1|
-|3     |mb_block_clk_wiz_1_0             |         1|
-|4     |mb_block_axi_gpio_0_1            |         1|
-|5     |mb_block_axi_gpio_0_2            |         1|
-|6     |mb_block_axi_gpio_0_0            |         1|
-|7     |mb_block_mdm_1_0                 |         1|
-|8     |mb_block_microblaze_0_0          |         1|
-|9     |mb_block_microblaze_0_axi_intc_0 |         1|
-|10    |mb_block_rst_clk_wiz_1_100M_0    |         1|
-|11    |mb_block_axi_quad_spi_0_0        |         1|
-|12    |mb_block_axi_timer_0_0           |         1|
-|13    |mb_block_dlmb_bram_if_cntlr_0    |         1|
-|14    |mb_block_dlmb_v10_0              |         1|
-|15    |mb_block_ilmb_bram_if_cntlr_0    |         1|
-|16    |mb_block_ilmb_v10_0              |         1|
-|17    |mb_block_lmb_bram_0              |         1|
-|18    |clk_wiz_0                        |         1|
-|19    |hdmi_tx_0                        |         1|
+|1     |mb_block_xbar_1                  |         1|
+|2     |mb_block_auto_pc_0               |         1|
+|3     |mb_block_auto_pc_1               |         1|
+|4     |mb_block_auto_pc_2               |         1|
+|5     |mb_block_auto_pc_3               |         1|
+|6     |mb_block_auto_pc_4               |         1|
+|7     |mb_block_auto_pc_5               |         1|
+|8     |mb_block_auto_pc_6               |         1|
+|9     |mb_block_auto_pc_7               |         1|
+|10    |mb_block_axi_uartlite_0_0        |         1|
+|11    |mb_block_axi_gpio_0_1            |         1|
+|12    |mb_block_axi_gpio_0_2            |         1|
+|13    |mb_block_axi_gpio_0_0            |         1|
+|14    |mb_block_mdm_1_1                 |         1|
+|15    |mb_block_microblaze_0_1          |         1|
+|16    |mb_block_microblaze_0_axi_intc_1 |         1|
+|17    |mb_block_mig_7series_0_0         |         1|
+|18    |mb_block_rst_mig_7series_0_83M_0 |         1|
+|19    |mb_block_axi_quad_spi_0_0        |         1|
+|20    |mb_block_axi_timer_0_0           |         1|
+|21    |clk_wiz_0                        |         1|
+|22    |hdmi_tx_0                        |         1|
 +------+---------------------------------+----------+
 
 Report Cell Usage: 
@@ -755,60 +779,54 @@ Report Cell Usage:
 +------+-------------------------------+------+
 |1     |clk_wiz                        |     1|
 |2     |hdmi_tx                        |     1|
-|3     |mb_block_axi_gpio_0            |     3|
-|6     |mb_block_axi_quad_spi_0        |     1|
-|7     |mb_block_axi_timer_0           |     1|
-|8     |mb_block_axi_uartlite_0        |     1|
-|9     |mb_block_clk_wiz_1             |     1|
-|10    |mb_block_dlmb_bram_if_cntlr    |     1|
-|11    |mb_block_dlmb_v10              |     1|
-|12    |mb_block_ilmb_bram_if_cntlr    |     1|
-|13    |mb_block_ilmb_v10              |     1|
-|14    |mb_block_lmb_bram              |     1|
-|15    |mb_block_mdm_1                 |     1|
-|16    |mb_block_microblaze_0          |     1|
-|17    |mb_block_microblaze_0_axi_intc |     1|
-|18    |mb_block_rst_clk_wiz_1_100M    |     1|
-|19    |mb_block_xbar                  |     1|
-|20    |CARRY4                         |   114|
-|21    |LUT1                           |    13|
-|22    |LUT2                           |   132|
-|23    |LUT3                           |   111|
-|24    |LUT4                           |   187|
-|25    |LUT5                           |   178|
-|26    |LUT6                           |   242|
-|27    |RAM64M                         |    30|
-|28    |RAMB18E1                       |     6|
-|30    |RAMB36E1                       |    60|
-|66    |FDCE                           |    29|
-|67    |FDRE                           |   243|
-|68    |FDSE                           |     2|
-|69    |IBUF                           |     4|
-|70    |OBUF                           |     5|
+|3     |mb_block_auto_pc               |     8|
+|11    |mb_block_axi_gpio_0            |     3|
+|14    |mb_block_axi_quad_spi_0        |     1|
+|15    |mb_block_axi_timer_0           |     1|
+|16    |mb_block_axi_uartlite_0        |     1|
+|17    |mb_block_mdm_1                 |     1|
+|18    |mb_block_microblaze_0          |     1|
+|19    |mb_block_microblaze_0_axi_intc |     1|
+|20    |mb_block_mig_7series_0         |     1|
+|21    |mb_block_rst_mig_7series_0_83M |     1|
+|22    |mb_block_xbar                  |     1|
+|23    |CARRY4                         |   114|
+|24    |LUT1                           |    14|
+|25    |LUT2                           |   132|
+|26    |LUT3                           |   111|
+|27    |LUT4                           |   194|
+|28    |LUT5                           |   248|
+|29    |LUT6                           |   290|
+|30    |RAM64M                         |   120|
+|31    |RAMB36E1                       |    60|
+|67    |FDCE                           |    29|
+|68    |FDRE                           |   439|
+|69    |FDSE                           |     2|
+|70    |IBUF                           |     5|
+|71    |OBUF                           |     5|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1641.664 ; gain = 812.617
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1616.945 ; gain = 755.656
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1616.945 ; gain = 807.242
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 1641.664 ; gain = 706.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1641.664 ; gain = 812.617
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1624.680 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1649.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 294 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1629.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1653.145 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 30 instances were transformed.
-  RAM64M => RAM64M (RAMD64E(x4)): 30 instances
+  A total of 120 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 120 instances
 
-Synth Design complete, checksum: e38ea946
+Synth Design complete, checksum: 489702d2
 INFO: [Common 17-83] Releasing license: Synthesis
-165 Infos, 235 Warnings, 1 Critical Warnings and 0 Errors encountered.
+171 Infos, 169 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1629.336 ; gain = 1196.320
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1653.145 ; gain = 1196.434
 INFO: [Common 17-1381] The checkpoint 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 18 00:54:22 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 22 21:41:54 2026...

@@ -27,7 +27,7 @@ module line_buffer(
         output logic [3:0] dout
     );
     
-    logic [3:0] mem [640];
+    (* ram_style = "distributed" *) logic [3:0] mem [640];
     
     always_ff @(posedge clk) begin
         if (we) begin

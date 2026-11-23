@@ -13,3 +13,24 @@
 *
 *******************************************************************/
 
+#ifndef MICROBLAZE_EXCEPTIONS_G_H
+#define MICROBLAZE_EXCEPTIONS_G_H
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+#define MICROBLAZE_EXCEPTIONS_ENABLED 1
+#define MICROBLAZE_CAN_HANDLE_EXCEPTIONS_IN_DELAY_SLOTS
+#define MICROBLAZE_FP_EXCEPTION_ENABLED 1
+
+
+#ifdef __cplusplus
+}
+#endif 
+
+#endif
+
+

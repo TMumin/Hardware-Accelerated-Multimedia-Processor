@@ -13,34 +13,21 @@ platform create -name {top_level}\
 -out {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis}
 
 platform write
-domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}
+domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {dhrystone}
 platform generate -domains 
 platform active {top_level}
 platform generate -quick
 platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
-platform generate
 platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
-platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
-platform generate -domains 
-platform active {top_level}
-platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
-platform generate -domains 
-platform active {top_level}
-platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
-platform generate
-platform active {top_level}
-platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
-platform generate
-platform active {top_level}
-platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
+platform clean
 platform generate
 platform active {top_level}
 platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
 platform generate -domains 
-platform active {top_level}
 platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
 platform generate -domains 
 platform active {top_level}
+platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
 platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}
 platform generate -domains 
 platform config -updatehw {C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa}

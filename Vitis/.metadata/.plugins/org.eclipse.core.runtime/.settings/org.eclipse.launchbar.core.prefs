@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_proessor_software-GDB_1,org.eclipse.launchbar.core.descriptorType.default\:Debugger_proessor_software-GDB
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_processor-GDB
 eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:Debugger_proessor_software-GDB/activeLaunchMode=run
-org.eclipse.launchbar.core.descriptorType.default\:Debugger_proessor_software-GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_processor-GDB/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_processor-GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

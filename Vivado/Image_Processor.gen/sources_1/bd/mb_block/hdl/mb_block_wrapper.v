@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Nov 11 21:47:58 2026
+//Date        : Sun Nov 22 13:18:43 2026
 //Host        : Taiseer-Laptop running 64-bit major release  (build 9200)
 //Command     : generate_target mb_block_wrapper.bd
 //Design      : mb_block_wrapper
@@ -10,32 +10,77 @@
 `timescale 1 ps / 1 ps
 
 module mb_block_wrapper
-   (clk_100MHz,
+   (SYS_CLK_clk_n,
+    SYS_CLK_clk_p,
+    ddr3_addr,
+    ddr3_ba,
+    ddr3_cas_n,
+    ddr3_ck_n,
+    ddr3_ck_p,
+    ddr3_cke,
+    ddr3_dm,
+    ddr3_dq,
+    ddr3_dqs_n,
+    ddr3_dqs_p,
+    ddr3_odt,
+    ddr3_ras_n,
+    ddr3_reset_n,
+    ddr3_we_n,
     gpio_usb_int_tri_i,
     gpio_usb_keycode_0_tri_o,
     gpio_usb_keycode_1_tri_io,
     gpio_usb_rst_tri_o,
     reset_rtl_0,
-    uart_rtl_0_rxd,
-    uart_rtl_0_txd,
+    uart_rxd,
+    uart_txd,
     usb_spi_miso,
     usb_spi_mosi,
     usb_spi_sclk,
     usb_spi_ss);
-  input clk_100MHz;
+  input SYS_CLK_clk_n;
+  input SYS_CLK_clk_p;
+  output [12:0]ddr3_addr;
+  output [2:0]ddr3_ba;
+  output ddr3_cas_n;
+  output [0:0]ddr3_ck_n;
+  output [0:0]ddr3_ck_p;
+  output [0:0]ddr3_cke;
+  output [1:0]ddr3_dm;
+  inout [15:0]ddr3_dq;
+  inout [1:0]ddr3_dqs_n;
+  inout [1:0]ddr3_dqs_p;
+  output [0:0]ddr3_odt;
+  output ddr3_ras_n;
+  output ddr3_reset_n;
+  output ddr3_we_n;
   input [0:0]gpio_usb_int_tri_i;
   output [31:0]gpio_usb_keycode_0_tri_o;
   inout [31:0]gpio_usb_keycode_1_tri_io;
   output [0:0]gpio_usb_rst_tri_o;
   input reset_rtl_0;
-  input uart_rtl_0_rxd;
-  output uart_rtl_0_txd;
+  input uart_rxd;
+  output uart_txd;
   input usb_spi_miso;
   output usb_spi_mosi;
   output usb_spi_sclk;
   output [0:0]usb_spi_ss;
 
-  wire clk_100MHz;
+  wire SYS_CLK_clk_n;
+  wire SYS_CLK_clk_p;
+  wire [12:0]ddr3_addr;
+  wire [2:0]ddr3_ba;
+  wire ddr3_cas_n;
+  wire [0:0]ddr3_ck_n;
+  wire [0:0]ddr3_ck_p;
+  wire [0:0]ddr3_cke;
+  wire [1:0]ddr3_dm;
+  wire [15:0]ddr3_dq;
+  wire [1:0]ddr3_dqs_n;
+  wire [1:0]ddr3_dqs_p;
+  wire [0:0]ddr3_odt;
+  wire ddr3_ras_n;
+  wire ddr3_reset_n;
+  wire ddr3_we_n;
   wire [0:0]gpio_usb_int_tri_i;
   wire [31:0]gpio_usb_keycode_0_tri_o;
   wire [0:0]gpio_usb_keycode_1_tri_i_0;
@@ -168,8 +213,8 @@ module mb_block_wrapper
   wire [9:9]gpio_usb_keycode_1_tri_t_9;
   wire [0:0]gpio_usb_rst_tri_o;
   wire reset_rtl_0;
-  wire uart_rtl_0_rxd;
-  wire uart_rtl_0_txd;
+  wire uart_rxd;
+  wire uart_txd;
   wire usb_spi_miso;
   wire usb_spi_mosi;
   wire usb_spi_sclk;
@@ -336,7 +381,22 @@ module mb_block_wrapper
         .O(gpio_usb_keycode_1_tri_i_9),
         .T(gpio_usb_keycode_1_tri_t_9));
   mb_block mb_block_i
-       (.clk_100MHz(clk_100MHz),
+       (.SYS_CLK_clk_n(SYS_CLK_clk_n),
+        .SYS_CLK_clk_p(SYS_CLK_clk_p),
+        .ddr3_addr(ddr3_addr),
+        .ddr3_ba(ddr3_ba),
+        .ddr3_cas_n(ddr3_cas_n),
+        .ddr3_ck_n(ddr3_ck_n),
+        .ddr3_ck_p(ddr3_ck_p),
+        .ddr3_cke(ddr3_cke),
+        .ddr3_dm(ddr3_dm),
+        .ddr3_dq(ddr3_dq),
+        .ddr3_dqs_n(ddr3_dqs_n),
+        .ddr3_dqs_p(ddr3_dqs_p),
+        .ddr3_odt(ddr3_odt),
+        .ddr3_ras_n(ddr3_ras_n),
+        .ddr3_reset_n(ddr3_reset_n),
+        .ddr3_we_n(ddr3_we_n),
         .gpio_usb_int_tri_i(gpio_usb_int_tri_i),
         .gpio_usb_keycode_0_tri_o(gpio_usb_keycode_0_tri_o),
         .gpio_usb_keycode_1_tri_i({gpio_usb_keycode_1_tri_i_31,gpio_usb_keycode_1_tri_i_30,gpio_usb_keycode_1_tri_i_29,gpio_usb_keycode_1_tri_i_28,gpio_usb_keycode_1_tri_i_27,gpio_usb_keycode_1_tri_i_26,gpio_usb_keycode_1_tri_i_25,gpio_usb_keycode_1_tri_i_24,gpio_usb_keycode_1_tri_i_23,gpio_usb_keycode_1_tri_i_22,gpio_usb_keycode_1_tri_i_21,gpio_usb_keycode_1_tri_i_20,gpio_usb_keycode_1_tri_i_19,gpio_usb_keycode_1_tri_i_18,gpio_usb_keycode_1_tri_i_17,gpio_usb_keycode_1_tri_i_16,gpio_usb_keycode_1_tri_i_15,gpio_usb_keycode_1_tri_i_14,gpio_usb_keycode_1_tri_i_13,gpio_usb_keycode_1_tri_i_12,gpio_usb_keycode_1_tri_i_11,gpio_usb_keycode_1_tri_i_10,gpio_usb_keycode_1_tri_i_9,gpio_usb_keycode_1_tri_i_8,gpio_usb_keycode_1_tri_i_7,gpio_usb_keycode_1_tri_i_6,gpio_usb_keycode_1_tri_i_5,gpio_usb_keycode_1_tri_i_4,gpio_usb_keycode_1_tri_i_3,gpio_usb_keycode_1_tri_i_2,gpio_usb_keycode_1_tri_i_1,gpio_usb_keycode_1_tri_i_0}),
@@ -344,8 +404,8 @@ module mb_block_wrapper
         .gpio_usb_keycode_1_tri_t({gpio_usb_keycode_1_tri_t_31,gpio_usb_keycode_1_tri_t_30,gpio_usb_keycode_1_tri_t_29,gpio_usb_keycode_1_tri_t_28,gpio_usb_keycode_1_tri_t_27,gpio_usb_keycode_1_tri_t_26,gpio_usb_keycode_1_tri_t_25,gpio_usb_keycode_1_tri_t_24,gpio_usb_keycode_1_tri_t_23,gpio_usb_keycode_1_tri_t_22,gpio_usb_keycode_1_tri_t_21,gpio_usb_keycode_1_tri_t_20,gpio_usb_keycode_1_tri_t_19,gpio_usb_keycode_1_tri_t_18,gpio_usb_keycode_1_tri_t_17,gpio_usb_keycode_1_tri_t_16,gpio_usb_keycode_1_tri_t_15,gpio_usb_keycode_1_tri_t_14,gpio_usb_keycode_1_tri_t_13,gpio_usb_keycode_1_tri_t_12,gpio_usb_keycode_1_tri_t_11,gpio_usb_keycode_1_tri_t_10,gpio_usb_keycode_1_tri_t_9,gpio_usb_keycode_1_tri_t_8,gpio_usb_keycode_1_tri_t_7,gpio_usb_keycode_1_tri_t_6,gpio_usb_keycode_1_tri_t_5,gpio_usb_keycode_1_tri_t_4,gpio_usb_keycode_1_tri_t_3,gpio_usb_keycode_1_tri_t_2,gpio_usb_keycode_1_tri_t_1,gpio_usb_keycode_1_tri_t_0}),
         .gpio_usb_rst_tri_o(gpio_usb_rst_tri_o),
         .reset_rtl_0(reset_rtl_0),
-        .uart_rtl_0_rxd(uart_rtl_0_rxd),
-        .uart_rtl_0_txd(uart_rtl_0_txd),
+        .uart_rxd(uart_rxd),
+        .uart_txd(uart_txd),
         .usb_spi_miso(usb_spi_miso),
         .usb_spi_mosi(usb_spi_mosi),
         .usb_spi_sclk(usb_spi_sclk),

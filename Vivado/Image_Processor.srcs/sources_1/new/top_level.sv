@@ -1,29 +1,30 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/11/2026 09:44:45 PM
-// Design Name: 
 // Module Name: top_level
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module top_level(
-    input logic Clk,
+    input logic Clk,                    // 100 MHz board clock, used by clk_wiz for HDMI
     input logic reset_rtl_0,
-    
+
+    //MIG differential system clock
+    input  logic SYS_CLK_clk_n,
+    input  logic SYS_CLK_clk_p,
+
+    //DDR3
+    output logic [12:0] ddr3_addr,
+    output logic [2:0]  ddr3_ba,
+    output logic        ddr3_cas_n,
+    output logic [0:0]  ddr3_ck_n,
+    output logic [0:0]  ddr3_ck_p,
+    output logic [0:0]  ddr3_cke,
+    output logic [1:0]  ddr3_dm,
+    inout  wire  [15:0] ddr3_dq,
+    inout  wire  [1:0]  ddr3_dqs_n,
+    inout  wire  [1:0]  ddr3_dqs_p,
+    output logic [0:0]  ddr3_odt,
+    output logic        ddr3_ras_n,
+    output logic        ddr3_reset_n,
+    output logic        ddr3_we_n,
+
     //USB signals
     input logic [0:0] gpio_usb_int_tri_i,
     output logic gpio_usb_rst_tri_o,
@@ -43,8 +44,8 @@ module top_level(
     output logic [2:0]hdmi_tmds_data_p
     );
     
-    logic [31:0] keycode0_gpio, keycode1_gpio;
-    logic clk_25MHz, clk_125MHz, clk, clk_100MHz;
+    logic [31:0] keycode0_gpio, keycode1_gpio;  // keycode1_gpio unused
+    logic clk_25MHz, clk_125MHz;
     logic locked;
     logic [9:0] drawX, drawY;
 
@@ -79,14 +80,31 @@ module top_level(
     assign addr_w  = drawY_n[9:1] * 320 + drawX_n[9:1];
     
     mb_block mb_block_i (
-        .clk_100MHz(Clk),
+        .SYS_CLK_clk_n(SYS_CLK_clk_n),
+        .SYS_CLK_clk_p(SYS_CLK_clk_p),
+        .ddr3_addr(ddr3_addr),
+        .ddr3_ba(ddr3_ba),
+        .ddr3_cas_n(ddr3_cas_n),
+        .ddr3_ck_n(ddr3_ck_n),
+        .ddr3_ck_p(ddr3_ck_p),
+        .ddr3_cke(ddr3_cke),
+        .ddr3_dm(ddr3_dm),
+        .ddr3_dq(ddr3_dq),
+        .ddr3_dqs_n(ddr3_dqs_n),
+        .ddr3_dqs_p(ddr3_dqs_p),
+        .ddr3_odt(ddr3_odt),
+        .ddr3_ras_n(ddr3_ras_n),
+        .ddr3_reset_n(ddr3_reset_n),
+        .ddr3_we_n(ddr3_we_n),
         .gpio_usb_int_tri_i(gpio_usb_int_tri_i),
         .gpio_usb_keycode_0_tri_o(keycode0_gpio),
+        .gpio_usb_keycode_1_tri_i(32'b0),
         .gpio_usb_keycode_1_tri_o(keycode1_gpio),
+        .gpio_usb_keycode_1_tri_t(),
         .gpio_usb_rst_tri_o(gpio_usb_rst_tri_o),
         .reset_rtl_0(~reset_ah), //Block designs expect active low reset, all other modules are active high
-        .uart_rtl_0_rxd(uart_rtl_0_rxd),
-        .uart_rtl_0_txd(uart_rtl_0_txd),
+        .uart_rxd(uart_rtl_0_rxd),
+        .uart_txd(uart_rtl_0_txd),
         .usb_spi_miso(usb_spi_miso),
         .usb_spi_mosi(usb_spi_mosi),
         .usb_spi_sclk(usb_spi_sclk),
@@ -450,6 +468,5 @@ module top_level(
                  keycode == 8'h13 || keycode == 8'h2f)
             keycode_last <= keycode;
     end
-    
     
 endmodule

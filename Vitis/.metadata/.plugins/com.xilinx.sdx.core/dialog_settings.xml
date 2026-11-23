@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\top_level\export\top_level"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vivado;C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\top_level\export\top_level"/>
 </section>

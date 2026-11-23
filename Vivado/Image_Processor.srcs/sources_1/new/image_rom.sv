@@ -29,8 +29,7 @@ module image_rom (
 
     initial $readmemh("image.mem", mem);
 
-    always_ff @(posedge clk) begin
-        data <= mem[addr];   // 1 cycle of read latency
-        data_w <= mem[addr_w];   // 1 cycle of read latency
-    end
+    always_ff @(posedge clk) data   <= mem[addr];
+    always_ff @(posedge clk) data_w <= mem[addr_w];
+    
 endmodule
