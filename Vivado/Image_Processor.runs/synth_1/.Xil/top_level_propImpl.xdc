@@ -131,33 +131,33 @@ set_property src_info {type:XDC file:1 line:102 export:INPUT save:INPUT read:REA
 set_property -dict {PACKAGE_PIN R5 IOSTANDARD DIFF_SSTL135 SLEW FAST} [get_ports {ddr3_ck_p[0]}]
 set_property src_info {type:XDC file:1 line:103 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN T4 IOSTANDARD DIFF_SSTL135 SLEW FAST} [get_ports {ddr3_ck_n[0]}]
-set_property src_info {type:XDC file:1 line:114 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN F14 IOSTANDARD LVCMOS33} [get_ports {cam_d[0]}]
-set_property src_info {type:XDC file:1 line:115 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN F15 IOSTANDARD LVCMOS33} [get_ports {cam_d[1]}]
-set_property src_info {type:XDC file:1 line:116 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN H13 IOSTANDARD LVCMOS33} [get_ports {cam_d[2]}]
-set_property src_info {type:XDC file:1 line:117 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN H14 IOSTANDARD LVCMOS33} [get_ports {cam_d[3]}]
-set_property src_info {type:XDC file:1 line:118 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN J13 IOSTANDARD LVCMOS33} [get_ports {cam_d[4]}]
 set_property src_info {type:XDC file:1 line:119 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN J14 IOSTANDARD LVCMOS33} [get_ports {cam_d[5]}]
+set_property -dict {PACKAGE_PIN F14 IOSTANDARD LVCMOS33} [get_ports {cam_d[0]}]
 set_property src_info {type:XDC file:1 line:120 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN E14 IOSTANDARD LVCMOS33} [get_ports {cam_d[6]}]
+set_property -dict {PACKAGE_PIN F15 IOSTANDARD LVCMOS33} [get_ports {cam_d[1]}]
 set_property src_info {type:XDC file:1 line:121 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN E15 IOSTANDARD LVCMOS33} [get_ports {cam_d[7]}]
+set_property -dict {PACKAGE_PIN H13 IOSTANDARD LVCMOS33} [get_ports {cam_d[2]}]
+set_property src_info {type:XDC file:1 line:122 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN H14 IOSTANDARD LVCMOS33} [get_ports {cam_d[3]}]
 set_property src_info {type:XDC file:1 line:123 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN H18 IOSTANDARD LVCMOS33} [get_ports cam_pclk]    ;# Pmod B pin 1
+set_property -dict {PACKAGE_PIN J13 IOSTANDARD LVCMOS33} [get_ports {cam_d[4]}]
 set_property src_info {type:XDC file:1 line:124 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS33} [get_ports cam_vsync]   ;# Pmod B pin 2
+set_property -dict {PACKAGE_PIN J14 IOSTANDARD LVCMOS33} [get_ports {cam_d[5]}]
 set_property src_info {type:XDC file:1 line:125 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN K14 IOSTANDARD LVCMOS33} [get_ports cam_href]    ;# Pmod B pin 3
+set_property -dict {PACKAGE_PIN E14 IOSTANDARD LVCMOS33} [get_ports {cam_d[6]}]
 set_property src_info {type:XDC file:1 line:126 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33 SLEW FAST} [get_ports cam_xclk]  ;# Pmod B pin 4
-set_property src_info {type:XDC file:1 line:127 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33 PULLUP TRUE} [get_ports cam_sioc] ;# Pmod B pin 7
+set_property -dict {PACKAGE_PIN E15 IOSTANDARD LVCMOS33} [get_ports {cam_d[7]}]
 set_property src_info {type:XDC file:1 line:128 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33 PULLUP TRUE} [get_ports cam_siod] ;# Pmod B pin 8
+set_property -dict {PACKAGE_PIN H18 IOSTANDARD LVCMOS33} [get_ports cam_pclk]    ;# Pmod B pin 1
+set_property src_info {type:XDC file:1 line:129 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS33} [get_ports cam_vsync]   ;# Pmod B pin 2
+set_property src_info {type:XDC file:1 line:130 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN K14 IOSTANDARD LVCMOS33} [get_ports cam_href]    ;# Pmod B pin 3
 set_property src_info {type:XDC file:1 line:131 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33 SLEW FAST} [get_ports cam_xclk]  ;# Pmod B pin 4
+set_property src_info {type:XDC file:1 line:132 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33 PULLUP TRUE} [get_ports cam_sioc] ;# Pmod B pin 7
+set_property src_info {type:XDC file:1 line:133 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33 PULLUP TRUE} [get_ports cam_siod] ;# Pmod B pin 8
+set_property src_info {type:XDC file:1 line:136 export:INPUT save:INPUT read:READ} [current_design]
 create_clock -period 40.000 -name cam_pclk [get_ports cam_pclk]

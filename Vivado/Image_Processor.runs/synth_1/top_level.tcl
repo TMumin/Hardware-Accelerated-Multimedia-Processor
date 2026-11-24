@@ -91,9 +91,13 @@ OPTRACE "Adding files" START { }
 read_mem C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Images/image.mem
 read_verilog -library xil_defaultlib -sv {
   C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/design_source/VGA_controller.sv
+  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_engine.sv
+  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_regs.sv
   C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/emboss.sv
   C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/gaussian.sv
   C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/grayscale.sv
+  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv
+  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud_font_rom.sv
   C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/image_rom.sv
   C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/line_buffer.sv
   C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/sharpen.sv
@@ -126,7 +130,7 @@ set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1_ooc_debug.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/mb_block_microblaze_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xbar_1/mb_block_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_7/mb_block_auto_pc_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_8/mb_block_auto_pc_8_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_0/mb_block_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_1/mb_block_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_2/mb_block_auto_pc_2_ooc.xdc]
@@ -134,6 +138,7 @@ set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_4/mb_block_auto_pc_4_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_5/mb_block_auto_pc_5_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_6/mb_block_auto_pc_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_auto_pc_7/mb_block_auto_pc_7_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_1/mb_block_microblaze_0_axi_intc_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_1/mb_block_microblaze_0_axi_intc_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_1/mb_block_microblaze_0_axi_intc_1_ooc.xdc]
@@ -142,6 +147,9 @@ set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/mb_block_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_1/data/mb_bootloop_le.elf]
 

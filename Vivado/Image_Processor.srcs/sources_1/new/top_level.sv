@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-// Module Name: top_level
+`define CONV_GPIO
 
 module top_level(
     input logic Clk,                    // 100 MHz board clock, used by clk_wiz for HDMI
@@ -45,6 +45,12 @@ module top_level(
     );
     
     logic [31:0] keycode0_gpio, keycode1_gpio;  // keycode1_gpio unused
+    logic [31:0] conv_data, conv_ctl;           // MicroBlaze -> convolution register file
+`ifndef CONV_GPIO
+    assign conv_data = 32'd0;
+    assign conv_ctl  = 32'd0;
+`endif
+    logic [9:0]  drawX_2, drawY_2;              // pixel coordinates aligned with the t=2 output pixel
     logic clk_25MHz, clk_125MHz;
     logic locked;
     logic [9:0] drawX, drawY;
@@ -55,7 +61,8 @@ module top_level(
     
     logic hsync_1, vsync_1, vde_1, hsync_2, vsync_2, vde_2;
     logic [9:0] drawX_d, drawY_d;
-    logic [3:0] red_filtered, green_filtered, blue_filtered;
+    logic [3:0] red_filtered, green_filtered, blue_filtered;   // final pixel (after HUD overlay)
+    logic [3:0] red_mux, green_mux, blue_mux;                  // filter mux output
     
     assign reset_ah = reset_rtl_0;
     
@@ -68,6 +75,8 @@ module top_level(
         vde_2 <= vde_1;
         drawX_d <= drawX;
         drawY_d <= drawY;
+        drawX_2 <= drawX_d;
+        drawY_2 <= drawY_d;
     end
     
     //To prevent trailing window
@@ -101,6 +110,10 @@ module top_level(
         .gpio_usb_keycode_1_tri_i(32'b0),
         .gpio_usb_keycode_1_tri_o(keycode1_gpio),
         .gpio_usb_keycode_1_tri_t(),
+`ifdef CONV_GPIO
+        .gpio_conv_data_tri_o(conv_data),
+        .gpio_conv_ctl_tri_o(conv_ctl),
+`endif
         .gpio_usb_rst_tri_o(gpio_usb_rst_tri_o),
         .reset_rtl_0(~reset_ah), //Block designs expect active low reset, all other modules are active high
         .uart_rxd(uart_rtl_0_rxd),
@@ -436,36 +449,115 @@ module top_level(
         .weight(blue_emboss)
     );
     
+    //Programmable convolution (3 channels share one register file written by the MicroBlaze)
+    logic [71:0]       conv_kernel;
+    logic [3:0]        conv_shift, conv_preset;
+    logic signed [7:0] conv_bias;
+    logic [3:0]        red_conv, green_conv, blue_conv;
+
+    conv_regs conv_regs_i(
+        .clk(clk_25MHz),
+        .rst(reset_ah),
+        .gpio_data(conv_data),
+        .gpio_ctl(conv_ctl),
+        .kernel(conv_kernel),
+        .shift(conv_shift),
+        .bias(conv_bias),
+        .preset_id(conv_preset)
+    );
+    conv_engine conv_r(
+        .p0(p0_r), .p1(p1_r), .p2(p2_r), .p3(p3_r), .p4(p4_r), .p5(p5_r), .p6(p6_r), .p7(p7_r), .p8(p8_r),
+        .kernel(conv_kernel), .shift(conv_shift), .bias(conv_bias), .out(red_conv)
+    );
+    conv_engine conv_g(
+        .p0(p0_g), .p1(p1_g), .p2(p2_g), .p3(p3_g), .p4(p4_g), .p5(p5_g), .p6(p6_g), .p7(p7_g), .p8(p8_g),
+        .kernel(conv_kernel), .shift(conv_shift), .bias(conv_bias), .out(green_conv)
+    );
+    conv_engine conv_b(
+        .p0(p0_b), .p1(p1_b), .p2(p2_b), .p3(p3_b), .p4(p4_b), .p5(p5_b), .p6(p6_b), .p7(p7_b), .p8(p8_b),
+        .kernel(conv_kernel), .shift(conv_shift), .bias(conv_bias), .out(blue_conv)
+    );
+
+    //On-screen display (filter name + frame counter). Toggle with the H key.
+    logic [7:0] keycode, keycode_meta, keycode_last, keycode_prev;
+    logic       hud_en = 1'b1;
+    logic [4:0] hud_name;
+    logic       hud_box, hud_text;
+
+    always_comb begin
+        case (keycode_last)
+            8'h14: hud_name = 5'd0;    // Q raw
+            8'h1a: hud_name = 5'd1;    // W grayscale
+            8'h08: hud_name = 5'd2;    // E invert
+            8'h15: hud_name = 5'd3;    // R red
+            8'h17: hud_name = 5'd4;    // T green
+            8'h1c: hud_name = 5'd5;    // Y blue
+            8'h18: hud_name = 5'd6;    // U sobel
+            8'h0c: hud_name = 5'd7;    // I gaussian
+            8'h12: hud_name = 5'd8;    // O sharpen
+            8'h13: hud_name = 5'd9;    // P emboss gray
+            8'h2f: hud_name = 5'd10;   // [ emboss colour
+            8'h1e, 8'h1f, 8'h20, 8'h21, 8'h22, 8'h23, 8'h24, 8'h25, 8'h26, 8'h27:
+                   hud_name = (conv_preset == 4'd0 || conv_preset > 4'd9) ? 5'd11 : (5'd11 + {1'b0, conv_preset});
+            default: hud_name = 5'd0;
+        endcase
+    end
+
+    hud hud_i(
+        .clk(clk_25MHz),
+        .rst(reset_ah),
+        .frame_pulse(vsync_2),
+        .drawX_d(drawX_2),
+        .drawY_d(drawY_2),
+        .name_idx(hud_name),
+        .box(hud_box),
+        .text(hud_text)
+    );
+
+    // Overlay: lit glyph pixels white, panel dims the video behind the text
+    always_comb begin
+        if (hud_en && hud_box)
+            {red_filtered, green_filtered, blue_filtered} = hud_text ? 12'hFFF
+                : {2'b00, red_mux[3:2], 2'b00, green_mux[3:2], 2'b00, blue_mux[3:2]};
+        else
+            {red_filtered, green_filtered, blue_filtered} = {red_mux, green_mux, blue_mux};
+    end
+
     //Filter selection MUX
-    logic [7:0] keycode, keycode_meta, keycode_last;
     
     always_comb begin
         unique case (keycode_last)
-            8'h14: {red_filtered, green_filtered, blue_filtered} = {red_raw, green_raw, blue_raw};
-            8'h1a: {red_filtered, green_filtered, blue_filtered} = {gray, gray, gray};
-            8'h08: {red_filtered, green_filtered, blue_filtered} = {~red_raw, ~green_raw, ~blue_raw};
-            8'h15: {red_filtered, green_filtered, blue_filtered} = {red_raw, 4'h0, 4'h0};
-            8'h17: {red_filtered, green_filtered, blue_filtered} = {4'h0, green_raw, 4'h0};
-            8'h1c: {red_filtered, green_filtered, blue_filtered} = {4'h0, 4'h0, blue_raw};
-            8'h18: {red_filtered, green_filtered, blue_filtered} = {sobel_color, sobel_color, sobel_color};
-            8'h0c: {red_filtered, green_filtered, blue_filtered} = border ? {red_raw, green_raw, blue_raw} : {red_blur, green_blur, blue_blur};
-            8'h12: {red_filtered, green_filtered, blue_filtered} = border ? {red_raw, green_raw, blue_raw} : {red_sharp, green_sharp, blue_sharp};
-            8'h13: {red_filtered, green_filtered, blue_filtered} = border ? {gray, gray, gray} : {gray_emboss, gray_emboss, gray_emboss};
-            8'h2f: {red_filtered, green_filtered, blue_filtered} = border ? {red_raw, green_raw, blue_raw} : {red_emboss, green_emboss, blue_emboss};
-            default: {red_filtered, green_filtered, blue_filtered} = {red_raw, green_raw, blue_raw};
+            8'h14: {red_mux, green_mux, blue_mux} = {red_raw, green_raw, blue_raw};
+            8'h1a: {red_mux, green_mux, blue_mux} = {gray, gray, gray};
+            8'h08: {red_mux, green_mux, blue_mux} = {~red_raw, ~green_raw, ~blue_raw};
+            8'h15: {red_mux, green_mux, blue_mux} = {red_raw, 4'h0, 4'h0};
+            8'h17: {red_mux, green_mux, blue_mux} = {4'h0, green_raw, 4'h0};
+            8'h1c: {red_mux, green_mux, blue_mux} = {4'h0, 4'h0, blue_raw};
+            8'h18: {red_mux, green_mux, blue_mux} = {sobel_color, sobel_color, sobel_color};
+            8'h0c: {red_mux, green_mux, blue_mux} = border ? {red_raw, green_raw, blue_raw} : {red_blur, green_blur, blue_blur};
+            8'h12: {red_mux, green_mux, blue_mux} = border ? {red_raw, green_raw, blue_raw} : {red_sharp, green_sharp, blue_sharp};
+            8'h13: {red_mux, green_mux, blue_mux} = border ? {gray, gray, gray} : {gray_emboss, gray_emboss, gray_emboss};
+            8'h2f: {red_mux, green_mux, blue_mux} = border ? {red_raw, green_raw, blue_raw} : {red_emboss, green_emboss, blue_emboss};
+            8'h1e, 8'h1f, 8'h20, 8'h21, 8'h22, 8'h23, 8'h24, 8'h25, 8'h26, 8'h27:
+                {red_mux, green_mux, blue_mux} = border ? {red_raw, green_raw, blue_raw} : {red_conv, green_conv, blue_conv};
+            default: {red_mux, green_mux, blue_mux} = {red_raw, green_raw, blue_raw};
         endcase
     end
     
     always_ff @(posedge clk_25MHz) begin
         keycode_meta <= keycode0_gpio[7:0];
         keycode <= keycode_meta;
+        keycode_prev <= keycode;
+        if (keycode == 8'h0b && keycode_prev != 8'h0b)   // 'H'
+            hud_en <= ~hud_en;
     
         if (reset_ah)
             keycode_last <= 8'h14;
         else if (keycode == 8'h14 || keycode == 8'h1a || keycode == 8'h08 || 
                  keycode == 8'h15 || keycode == 8'h17 || keycode == 8'h1c ||
                  keycode == 8'h18 || keycode == 8'h0c || keycode == 8'h12 ||
-                 keycode == 8'h13 || keycode == 8'h2f)
+                 keycode == 8'h13 || keycode == 8'h2f ||
+                 (keycode >= 8'h1e && keycode <= 8'h27))   // '1'..'9' = kernel presets, '0' = custom kernel
             keycode_last <= keycode;
     end
     

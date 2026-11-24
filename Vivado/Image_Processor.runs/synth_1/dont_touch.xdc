@@ -36,8 +36,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_mi
 # IP: bd/mb_block/ip/mb_block_xbar_1/mb_block_xbar_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_xbar_1 || ORIG_REF_NAME==mb_block_xbar_1} -quiet] -quiet
 
-# IP: bd/mb_block/ip/mb_block_auto_pc_7/mb_block_auto_pc_7.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_auto_pc_7 || ORIG_REF_NAME==mb_block_auto_pc_7} -quiet] -quiet
+# IP: bd/mb_block/ip/mb_block_auto_pc_8/mb_block_auto_pc_8.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_auto_pc_8 || ORIG_REF_NAME==mb_block_auto_pc_8} -quiet] -quiet
 
 # IP: bd/mb_block/ip/mb_block_auto_pc_0/mb_block_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_auto_pc_0 || ORIG_REF_NAME==mb_block_auto_pc_0} -quiet] -quiet
@@ -60,6 +60,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_au
 # IP: bd/mb_block/ip/mb_block_auto_pc_6/mb_block_auto_pc_6.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_auto_pc_6 || ORIG_REF_NAME==mb_block_auto_pc_6} -quiet] -quiet
 
+# IP: bd/mb_block/ip/mb_block_auto_pc_7/mb_block_auto_pc_7.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_auto_pc_7 || ORIG_REF_NAME==mb_block_auto_pc_7} -quiet] -quiet
+
 # IP: bd/mb_block/ip/mb_block_microblaze_0_axi_periph_1/mb_block_microblaze_0_axi_periph_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_microblaze_0_axi_periph_1 || ORIG_REF_NAME==mb_block_microblaze_0_axi_periph_1} -quiet] -quiet
 
@@ -71,5 +74,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_md
 
 # IP: bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_axi_uartlite_0_0 || ORIG_REF_NAME==mb_block_axi_uartlite_0_0} -quiet] -quiet
+
+# IP: bd/mb_block/ip/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_axi_gpio_0_3 || ORIG_REF_NAME==mb_block_axi_gpio_0_3} -quiet] -quiet
 
 # XDC: c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/mb_block_ooc.xdc

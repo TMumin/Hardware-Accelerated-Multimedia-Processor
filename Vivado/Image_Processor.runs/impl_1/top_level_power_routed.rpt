@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Sun Nov 22 21:48:21 2026
+| Date             : Mon Nov 23 18:15:27 2026
 | Host             : Taiseer-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
 | Design           : top_level
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.044        |
+| Total On-Chip Power (W)  | 1.050        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.963        |
+| Dynamic (W)              | 0.968        |
 | Device Static (W)        | 0.081        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 79.8         |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.048 |       28 |       --- |             --- |
-| Slice Logic              |     0.024 |    34118 |       --- |             --- |
-|   LUT as Logic           |     0.021 |    13116 |     32600 |           40.23 |
-|   Register               |     0.001 |    13058 |     65200 |           20.03 |
-|   CARRY4                 |    <0.001 |      570 |      8150 |            6.99 |
+| Clocks                   |     0.051 |       28 |       --- |             --- |
+| Slice Logic              |     0.025 |    37709 |       --- |             --- |
+|   LUT as Logic           |     0.022 |    14964 |     32600 |           45.90 |
+|   Register               |     0.001 |    13852 |     65200 |           21.25 |
+|   CARRY4                 |    <0.001 |      813 |      8150 |            9.98 |
 |   LUT as Distributed RAM |    <0.001 |     1004 |      9600 |           10.46 |
-|   F7/F8 Muxes            |    <0.001 |      187 |     32600 |            0.57 |
-|   LUT as Shift Register  |    <0.001 |      677 |      9600 |            7.05 |
-|   Others                 |    <0.001 |     1609 |       --- |             --- |
-| Signals                  |     0.030 |    25415 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      289 |     32600 |            0.89 |
+|   LUT as Shift Register  |    <0.001 |      718 |      9600 |            7.48 |
+|   Others                 |    <0.001 |     1654 |       --- |             --- |
+| Signals                  |     0.032 |    28299 |       --- |             --- |
 | Block RAM                |     0.021 |       64 |        75 |           85.33 |
 | MMCM                     |     0.205 |        2 |         5 |           40.00 |
 | PLL                      |     0.116 |        1 |         5 |           20.00 |
 | DSPs                     |     0.003 |        6 |       120 |            5.00 |
-| I/O                      |     0.399 |       66 |       210 |           31.43 |
+| I/O                      |     0.398 |       66 |       210 |           31.43 |
 | PHASER                   |     0.113 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.081 |          |           |                 |
-| Total                    |     1.044 |          |           |                 |
+| Total                    |     1.050 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.175 |       0.162 |      0.013 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.181 |       0.168 |      0.013 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.293 |       0.280 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
@@ -172,25 +172,26 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| top_level                            |     0.963 |
+| top_level                            |     0.968 |
 |   clk_wiz                            |     0.106 |
 |     inst                             |     0.106 |
-|   image_rom_i                        |     0.011 |
-|   mb_block_i                         |     0.708 |
+|   image_rom_i                        |     0.012 |
+|   mb_block_i                         |     0.711 |
 |     gpio_usb_keycode                 |     0.002 |
 |       U0                             |     0.002 |
-|     microblaze_0                     |     0.037 |
-|       U0                             |     0.037 |
+|     microblaze_0                     |     0.036 |
+|       U0                             |     0.036 |
 |     microblaze_0_axi_intc            |     0.001 |
 |       U0                             |     0.001 |
-|     microblaze_0_axi_periph          |     0.022 |
+|     microblaze_0_axi_periph          |     0.024 |
 |       m00_couplers                   |     0.003 |
-|       m01_couplers                   |     0.001 |
+|       m01_couplers                   |     0.002 |
 |       m02_couplers                   |     0.003 |
 |       m03_couplers                   |     0.002 |
 |       m04_couplers                   |     0.002 |
 |       m06_couplers                   |     0.002 |
 |       m07_couplers                   |     0.002 |
+|       m08_couplers                   |     0.002 |
 |       xbar                           |     0.006 |
 |     mig_7series_0                    |     0.639 |
 |       u_mb_block_mig_7series_0_0_mig |     0.639 |

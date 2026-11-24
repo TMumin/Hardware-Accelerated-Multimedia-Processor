@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Sun Nov 22 21:41:54 2026
+| Date         : Mon Nov 23 18:11:16 2026
 | Host         : Taiseer-Laptop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -31,16 +31,16 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                | 1363 |     0 |          0 |     32600 |  4.18 |
-|   LUT as Logic             |  883 |     0 |          0 |     32600 |  2.71 |
+| Slice LUTs*                | 2779 |     0 |          0 |     32600 |  8.52 |
+|   LUT as Logic             | 2299 |     0 |          0 |     32600 |  7.05 |
 |   LUT as Memory            |  480 |     0 |          0 |      9600 |  5.00 |
 |     LUT as Distributed RAM |  480 |     0 |            |           |       |
 |     LUT as Shift Register  |    0 |     0 |            |           |       |
-| Slice Registers            |  470 |     0 |          0 |     65200 |  0.72 |
-|   Register as Flip Flop    |  470 |     0 |          0 |     65200 |  0.72 |
+| Slice Registers            |  641 |     0 |          0 |     65200 |  0.98 |
+|   Register as Flip Flop    |  641 |     0 |          0 |     65200 |  0.98 |
 |   Register as Latch        |    0 |     0 |          0 |     65200 |  0.00 |
-| F7 Muxes                   |    0 |     0 |          0 |     16300 |  0.00 |
-| F8 Muxes                   |    0 |     0 |          0 |      8150 |  0.00 |
+| F7 Muxes                   |   89 |     0 |          0 |     16300 |  0.55 |
+| F8 Muxes                   |   13 |     0 |          0 |      8150 |  0.16 |
 +----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -60,8 +60,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 29    |          Yes |           - |        Reset |
-| 2     |          Yes |         Set |            - |
-| 439   |          Yes |       Reset |            - |
+| 4     |          Yes |         Set |            - |
+| 608   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,20 +150,22 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| LUT6     |  922 |                 LUT |
+| FDRE     |  608 |        Flop & Latch |
+| LUT3     |  542 |                 LUT |
+| LUT4     |  500 |                 LUT |
 | RAMD64E  |  480 |  Distributed Memory |
-| FDRE     |  439 |        Flop & Latch |
-| LUT6     |  290 |                 LUT |
-| LUT5     |  248 |                 LUT |
-| LUT4     |  194 |                 LUT |
-| LUT2     |  132 |                 LUT |
-| CARRY4   |  114 |          CarryLogic |
-| LUT3     |  111 |                 LUT |
+| LUT5     |  425 |                 LUT |
+| LUT2     |  351 |                 LUT |
+| CARRY4   |  342 |          CarryLogic |
+| MUXF7    |   89 |               MuxFx |
 | RAMB36E1 |   60 |        Block Memory |
+| LUT1     |   43 |                 LUT |
 | FDCE     |   29 |        Flop & Latch |
-| LUT1     |   14 |                 LUT |
+| MUXF8    |   13 |               MuxFx |
 | OBUF     |    5 |                  IO |
 | IBUF     |    5 |                  IO |
-| FDSE     |    2 |        Flop & Latch |
+| FDSE     |    4 |        Flop & Latch |
 +----------+------+---------------------+
 
 
@@ -182,9 +184,11 @@ Warning! LUT value is adjusted to account for LUT combining.
 | mb_block_axi_uartlite_0_0        |    1 |
 | mb_block_axi_timer_0_0           |    1 |
 | mb_block_axi_quad_spi_0_0        |    1 |
+| mb_block_axi_gpio_0_3            |    1 |
 | mb_block_axi_gpio_0_2            |    1 |
 | mb_block_axi_gpio_0_1            |    1 |
 | mb_block_axi_gpio_0_0            |    1 |
+| mb_block_auto_pc_8               |    1 |
 | mb_block_auto_pc_7               |    1 |
 | mb_block_auto_pc_6               |    1 |
 | mb_block_auto_pc_5               |    1 |

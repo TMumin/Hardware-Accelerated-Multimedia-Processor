@@ -107,6 +107,11 @@ set_property -dict {PACKAGE_PIN T4 IOSTANDARD DIFF_SSTL135 SLEW FAST} [get_ports
 ## sources, so this is an asynchronous crossing handled by the 2-flop synchronizer in top_level.
 set_false_path -to [get_cells {keycode_meta_reg[*]}]
 
+## MicroBlaze -> convolution register file (conv_regs): data and write strobe cross from the 83.33 MHz
+## MIG clock into the 25 MHz video clock through 2-flop synchronizers (ASYNC_REG).
+set_false_path -to [get_cells -hierarchical -filter {NAME =~ *conv_regs_i/data_meta_reg*}]
+set_false_path -to [get_cells -hierarchical -filter {NAME =~ *conv_regs_i/tog_meta_reg*}]
+
 ## ---- OV7670 camera on Pmod A + Pmod B (3.3 V) ----
 ## Power and ground are NOT constrained: they are fixed pins on the Pmod connectors
 ## (pins 6 and 12 = VCC, pins 5 and 11 = GND). Use those for the camera's 3V3/GND/RESET/PWDN wiring.

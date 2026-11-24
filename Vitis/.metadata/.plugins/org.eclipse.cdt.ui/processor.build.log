@@ -1,4 +1,4 @@
-10:55:43 **** Incremental Build of configuration Debug for project processor ****
+18:26:53 **** Incremental Build of configuration Debug for project processor ****
 make all 
 'Building file: ../src/lw_usb/HID.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -61,6 +61,11 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/transfer.o" -IC:/Users
       |       ^
 'Finished building: ../src/lw_usb/transfer.c'
 ' '
+'Building file: ../src/conv_ctrl.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/conv_ctrl.o" -IC:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/conv_ctrl.d" -MT"src/conv_ctrl.o" -o "src/conv_ctrl.o" "../src/conv_ctrl.c"
+'Finished building: ../src/conv_ctrl.c'
+' '
 'Building file: ../src/lw_usb_main.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -IC:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
@@ -73,15 +78,15 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/taise/
 ' '
 'Building target: processor.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "processor.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "processor.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/conv_ctrl.o ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: processor.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size processor.elf  |tee "processor.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24636	    560	   2652	  27848	   6cc8	processor.elf
+ 132224	   1984	   2816	 137024	  21740	processor.elf
 'Finished building: processor.elf.size'
 ' '
 
-10:55:49 Build Finished (took 6s.539ms)
+18:26:58 Build Finished (took 5s.226ms)
 

@@ -7,6 +7,7 @@
 #include "lw_usb/usb_ch9.h"
 #include "lw_usb/transfer.h"
 #include "lw_usb/HID.h"
+#include "conv_ctrl.h"
 
 #include "xparameters.h"
 #include <xgpio.h>
@@ -61,6 +62,7 @@ void printHex (u32 data, unsigned channel)
 
 int main() {
     init_platform();
+    conv_init();            // convolution engine: load the identity kernel and print help
     XGpio_Initialize(&Gpio_hex, XPAR_GPIO_USB_KEYCODE_DEVICE_ID);
    	XGpio_SetDataDirection(&Gpio_hex, 1, 0x00000000); //configure hex display GPIO
    	XGpio_SetDataDirection(&Gpio_hex, 2, 0x00000000); //configure hex display GPIO
@@ -79,6 +81,7 @@ int main() {
 	xil_printf("initializing USB...\n");
 	USB_init();
 	while (1) {
+		conv_uart_poll();   // typed kernel commands ('p N' / 'k ...') from the serial terminal
 		xil_printf("."); //A tick here means one loop through the USB main handler
 		MAX3421E_Task();
 		USB_Task();
@@ -102,6 +105,7 @@ int main() {
 				}
 				//Outputs the first 4 keycodes using the USB GPIO channel 1
 				printHex (kbdbuf.keycode[0] + (kbdbuf.keycode[1]<<8) + (kbdbuf.keycode[2]<<16) + + (kbdbuf.keycode[3]<<24), 1);
+				conv_on_key(kbdbuf.keycode[0]);   // keys 1-9 load kernel presets
 				//Modify to output the last 2 keycodes on channel 2.
 				xil_printf("\n");
 			}

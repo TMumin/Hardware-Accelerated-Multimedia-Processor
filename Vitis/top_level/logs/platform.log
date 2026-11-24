@@ -3624,3 +3624,465 @@ TRACE::2026-11-22.22:09:02::SCWMssOS::Checking the sw design at  C:/Users/taise/
 TRACE::2026-11-22.22:09:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
 TRACE::2026-11-22.22:09:02::SCWMssOS::Sw design exists and opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:30::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-11-23.18:26:30::SCWPlatform::Opened new HwDB with name top_level
+TRACE::2026-11-23.18:26:30::SCWReader::Active system found as  top_level
+TRACE::2026-11-23.18:26:30::SCWReader::Handling sysconfig top_level
+TRACE::2026-11-23.18:26:30::SCWDomain::checking for install qemu data   : 
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to set the existing hwdb with name top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Opened existing hwdb top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to set the existing hwdb with name top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Opened existing hwdb top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to set the existing hwdb with name top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Opened existing hwdb top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to set the existing hwdb with name top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Opened existing hwdb top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:30::SCWMssOS::Checking the sw design at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-11-23.18:26:30::SCWMssOS::No sw design opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWMssOS::mss exists loading the mss file  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWMssOS::Opened the sw design from mss  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWMssOS::Adding the swdes entry C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2026-11-23.18:26:30::SCWMssOS::updating the scw layer about changes
+TRACE::2026-11-23.18:26:30::SCWMssOS::Opened the sw design.  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWMssOS::Saving the mss changes C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-11-23.18:26:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-11-23.18:26:30::SCWMssOS::Commit changes completed.
+TRACE::2026-11-23.18:26:30::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-11-23.18:26:30::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:30::SCWPlatform::Trying to set the existing hwdb with name top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Opened existing hwdb top_level
+TRACE::2026-11-23.18:26:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:30::SCWMssOS::Checking the sw design at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-11-23.18:26:30::SCWMssOS::Sw design exists and opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:30::SCWReader::No isolation master present  
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Platform location is C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:33::SCWMssOS::Doing hw sync for the mss in domain: standalone_microblaze_0
+TRACE::2026-11-23.18:26:33::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:33::SCWPlatform::Trying to set the existing hwdb with name top_level
+TRACE::2026-11-23.18:26:33::SCWPlatform::Opened existing hwdb top_level
+TRACE::2026-11-23.18:26:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:33::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:33::SCWPlatform::Trying to set the existing hwdb with name top_level
+TRACE::2026-11-23.18:26:33::SCWPlatform::Opened existing hwdb top_level
+TRACE::2026-11-23.18:26:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:33::SCWMssOS::Checking the sw design at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-11-23.18:26:33::SCWMssOS::Sw design exists and opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:33::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/tempdsa/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:33::SCWPlatform::update - Opened existing hwdb top_level_0
+TRACE::2026-11-23.18:26:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:33::SCWMssOS::Saving the mss changes C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:33::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-11-23.18:26:33::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-11-23.18:26:33::SCWMssOS::Commit changes completed.
+TRACE::2026-11-23.18:26:33::SCWMssOS::Completed hw sync for the mss in domain: standalone_microblaze_0
+TRACE::2026-11-23.18:26:33::SCWMssOS::Removing the swdes entry for  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:33::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:33::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:33::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-11-23.18:26:34::SCWPlatform::Opened new HwDB with name top_level_1
+TRACE::2026-11-23.18:26:34::SCWMssOS::Saving the mss changes C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:34::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2026-11-23.18:26:34::SCWMssOS::Writing the mss file completed C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:34::SCWMssOS::Commit changes completed.
+TRACE::2026-11-23.18:26:34::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:34::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:34::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:34::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:34::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:34::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:34::SCWPlatform::Trying to set the existing hwdb with name top_level_1
+TRACE::2026-11-23.18:26:34::SCWPlatform::Opened existing hwdb top_level_1
+TRACE::2026-11-23.18:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:34::SCWMssOS::Checking the sw design at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-11-23.18:26:34::SCWMssOS::Sw design exists and opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:34::SCWWriter::formatted JSON is {
+	"platformName":	"top_level",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top_level",
+	"platHandOff":	"C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top_level.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top_level",
+	"systems":	[{
+			"systemName":	"top_level",
+			"systemDesc":	"top_level",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top_level",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"003614bdce98dfc04a137abe4394e5091",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-11-23.18:26:41::SCWPlatform::Started generating the artifacts platform top_level
+TRACE::2026-11-23.18:26:41::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-11-23.18:26:41::SCWPlatform::Started generating the artifacts for system configuration top_level
+LOG::2026-11-23.18:26:41::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-11-23.18:26:41::SCWSystem::Not a boot domain 
+LOG::2026-11-23.18:26:41::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-11-23.18:26:41::SCWDomain::Generating domain artifcats
+TRACE::2026-11-23.18:26:41::SCWMssOS::Generating standalone artifcats
+TRACE::2026-11-23.18:26:41::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-11-23.18:26:41::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:41::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:41::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:41::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:41::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:41::SCWPlatform::Trying to set the existing hwdb with name top_level_1
+TRACE::2026-11-23.18:26:41::SCWPlatform::Opened existing hwdb top_level_1
+TRACE::2026-11-23.18:26:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:41::SCWMssOS::Checking the sw design at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:41::SCWMssOS::DEBUG:  swdes dump  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-11-23.18:26:41::SCWMssOS::Sw design exists and opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:41::SCWMssOS::Completed writing the mss file at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-11-23.18:26:41::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:41::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2026-11-23.18:26:44::SCWMssOS::doing bsp build ... 
+TRACE::2026-11-23.18:26:44::SCWMssOS::System Command Ran  C: & cd  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2026-11-23.18:26:45::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-11-23.18:26:45::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-hig
+TRACE::2026-11-23.18:26:45::SCWMssOS::h -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-pa
+TRACE::2026-11-23.18:26:45::SCWMssOS::tterns"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-11-23.18:26:45::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-hig
+TRACE::2026-11-23.18:26:45::SCWMssOS::h -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-pa
+TRACE::2026-11-23.18:26:45::SCWMssOS::tterns"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-11-23.18:26:45::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-hi
+TRACE::2026-11-23.18:26:45::SCWMssOS::gh -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-p
+TRACE::2026-11-23.18:26:45::SCWMssOS::atterns"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/spi_v4_9/src"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -C microblaze_0/libsrc/spi_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2026-11-23.18:26:45::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high
+TRACE::2026-11-23.18:26:45::SCWMssOS:: -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-pat
+TRACE::2026-11-23.18:26:45::SCWMssOS::terns"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-11-23.18:26:45::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multip
+TRACE::2026-11-23.18:26:45::SCWMssOS::ly-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2026-11-23.18:26:45::SCWMssOS::ute-patterns"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2026-11-23.18:26:45::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-h
+TRACE::2026-11-23.18:26:45::SCWMssOS::igh -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-
+TRACE::2026-11-23.18:26:45::SCWMssOS::patterns"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2026-11-23.18:26:45::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2026-11-23.18:26:45::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply
+TRACE::2026-11-23.18:26:45::SCWMssOS::-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribut
+TRACE::2026-11-23.18:26:45::SCWMssOS::e-patterns"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-11-23.18:26:46::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -
+TRACE::2026-11-23.18:26:46::SCWMssOS::mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patte
+TRACE::2026-11-23.18:26:46::SCWMssOS::rns"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-11-23.18:26:46::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -
+TRACE::2026-11-23.18:26:46::SCWMssOS::mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patte
+TRACE::2026-11-23.18:26:46::SCWMssOS::rns"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2026-11-23.18:26:46::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high 
+TRACE::2026-11-23.18:26:46::SCWMssOS::-mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patt
+TRACE::2026-11-23.18:26:46::SCWMssOS::erns"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/spi_v4_9/src"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::make -C microblaze_0/libsrc/spi_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2026-11-23.18:26:46::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -m
+TRACE::2026-11-23.18:26:46::SCWMssOS::xl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patter
+TRACE::2026-11-23.18:26:46::SCWMssOS::ns"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2026-11-23.18:26:46::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2026-11-23.18:26:46::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-
+TRACE::2026-11-23.18:26:46::SCWMssOS::high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute
+TRACE::2026-11-23.18:26:46::SCWMssOS::-patterns"
+
+TRACE::2026-11-23.18:26:47::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2026-11-23.18:26:47::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2026-11-23.18:26:47::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high
+TRACE::2026-11-23.18:26:47::SCWMssOS:: -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-pat
+TRACE::2026-11-23.18:26:47::SCWMssOS::terns"
+
+TRACE::2026-11-23.18:26:47::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2026-11-23.18:26:47::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-11-23.18:26:47::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-hi
+TRACE::2026-11-23.18:26:47::SCWMssOS::gh -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-p
+TRACE::2026-11-23.18:26:47::SCWMssOS::atterns"
+
+TRACE::2026-11-23.18:26:50::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2026-11-23.18:26:50::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2026-11-23.18:26:50::SCWMssOS::make --no-print-directory archive
+
+TRACE::2026-11-23.18:26:51::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2026-11-23.18:26:51::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2026-11-23.18:26:51::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2026-11-23.18:26:51::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2026-11-23.18:26:51::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2026-11-23.18:26:51::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2026-11-23.18:26:51::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2026-11-23.18:26:51::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2026-11-23.18:26:51::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2026-11-23.18:26:51::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2026-11-23.18:26:51::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2026-11-23.18:26:51::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2026-11-23.18:26:51::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/lib/xgpio_g.o microbla
+TRACE::2026-11-23.18:26:51::SCWMssOS::ze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil_assert.o microblaze
+TRACE::2026-11-23.18:26:51::SCWMssOS::_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib
+TRACE::2026-11-23.18:26:51::SCWMssOS::/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_testcache.o micro
+TRACE::2026-11-23.18:26:51::SCWMssOS::blaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.o microblaze_0/lib/x
+TRACE::2026-11-23.18:26:51::SCWMssOS::intc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/xintc_selft
+TRACE::2026-11-23.18:26:51::SCWMssOS::est.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xspi.o micro
+TRACE::2026-11-23.18:26:51::SCWMssOS::blaze_0/lib/xspi_g.o microblaze_0/lib/xspi_options.o microblaze_0/lib/xspi_selftest.o microblaze_0/lib/xspi_sinit.o microblaze_
+TRACE::2026-11-23.18:26:51::SCWMssOS::0/lib/xspi_stats.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/xtmrctr_intr.o microblaze_0/lib/xtm
+TRACE::2026-11-23.18:26:51::SCWMssOS::rctr_l.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/xtmrctr_sinit.o microblaze_0/l
+TRACE::2026-11-23.18:26:51::SCWMssOS::ib/xtmrctr_stats.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/l
+TRACE::2026-11-23.18:26:51::SCWMssOS::ib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2026-11-23.18:26:51::SCWMssOS::'Finished building libraries'
+
+TRACE::2026-11-23.18:26:51::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-11-23.18:26:51::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-11-23.18:26:51::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-11-23.18:26:51::SCWSystem::Completed Processing the sysconfig top_level
+LOG::2026-11-23.18:26:51::SCWPlatform::Completed generating the artifacts for system configuration top_level
+TRACE::2026-11-23.18:26:51::SCWPlatform::Started preparing the platform 
+TRACE::2026-11-23.18:26:51::SCWSystem::Writing the bif file for system config top_level
+TRACE::2026-11-23.18:26:51::SCWSystem::dir created 
+TRACE::2026-11-23.18:26:51::SCWSystem::Writing the bif 
+TRACE::2026-11-23.18:26:51::SCWPlatform::Started writing the spfm file 
+TRACE::2026-11-23.18:26:51::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-11-23.18:26:51::SCWPlatform::Completed generating the platform
+TRACE::2026-11-23.18:26:51::SCWMssOS::Saving the mss changes C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:51::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2026-11-23.18:26:51::SCWMssOS::Writing the mss file completed C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:51::SCWMssOS::Commit changes completed.
+TRACE::2026-11-23.18:26:51::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:51::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:51::SCWPlatform::Trying to set the existing hwdb with name top_level_1
+TRACE::2026-11-23.18:26:51::SCWPlatform::Opened existing hwdb top_level_1
+TRACE::2026-11-23.18:26:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:51::SCWMssOS::Checking the sw design at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-11-23.18:26:51::SCWMssOS::Sw design exists and opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:51::SCWWriter::formatted JSON is {
+	"platformName":	"top_level",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"top_level",
+	"platHandOff":	"C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/top_level.xsa",
+	"platIntHandOff":	"<platformDir>/hw/top_level.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"top_level",
+	"systems":	[{
+			"systemName":	"top_level",
+			"systemDesc":	"top_level",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"top_level",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"003614bdce98dfc04a137abe4394e509",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-11-23.18:26:51::SCWPlatform::updated the xpfm file.
+TRACE::2026-11-23.18:26:51::SCWPlatform::Trying to open the hw design at C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform::DSA given C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform::DSA absoulate path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform::DSA directory C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw
+TRACE::2026-11-23.18:26:51::SCWPlatform:: Platform Path C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/hw/top_level.xsa
+TRACE::2026-11-23.18:26:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2026-11-23.18:26:51::SCWPlatform::Trying to set the existing hwdb with name top_level_1
+TRACE::2026-11-23.18:26:51::SCWPlatform::Opened existing hwdb top_level_1
+TRACE::2026-11-23.18:26:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-11-23.18:26:51::SCWMssOS::Checking the sw design at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-11-23.18:26:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-11-23.18:26:51::SCWMssOS::Sw design exists and opened at  C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/microblaze_0/standalone_microblaze_0/bsp/system.mss
