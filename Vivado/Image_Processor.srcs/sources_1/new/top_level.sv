@@ -1,5 +1,9 @@
 `timescale 1ns / 1ps
-`define CONV_GPIO
+// Module Name: top_level
+//
+// CONV_GPIO: uncomment the next line AFTER adding the dual-channel AXI GPIO (axi_gpio_conv) to the block
+// design and making its two channels external as gpio_conv_data and gpio_conv_ctl.
+ `define CONV_GPIO
 
 module top_level(
     input logic Clk,                    // 100 MHz board clock, used by clk_wiz for HDMI
@@ -449,10 +453,14 @@ module top_level(
         .weight(blue_emboss)
     );
     
-    //Programmable convolution (3 channels share one register file written by the MicroBlaze)
+    //Programmable 3x3 convolution: one register file (written by the MicroBlaze) feeds three engines (R, G, B).
+    //K selects the custom kernel; ] selects a fixed Laplacian through the same engines.
+    logic [7:0] keycode, keycode_meta, keycode_last, keycode_prev;
+
     logic [71:0]       conv_kernel;
-    logic [3:0]        conv_shift, conv_preset;
+    logic [3:0]        conv_shift, conv_cursor;
     logic signed [7:0] conv_bias;
+    logic              conv_edit;
     logic [3:0]        red_conv, green_conv, blue_conv;
 
     conv_regs conv_regs_i(
@@ -463,26 +471,37 @@ module top_level(
         .kernel(conv_kernel),
         .shift(conv_shift),
         .bias(conv_bias),
-        .preset_id(conv_preset)
+        .edit_en(conv_edit),
+        .cursor(conv_cursor)
     );
+
+    localparam logic [71:0] LAP_KERNEL = 72'hff_ff_ff_ff_08_ff_ff_ff_ff;   // -1 -1 -1 / -1 8 -1 / -1 -1 -1
+    logic              lap_sel;
+    logic [71:0]       eff_kernel;
+    logic [3:0]        eff_shift;
+    logic signed [7:0] eff_bias;
+    assign lap_sel    = (keycode_last == 8'h30);
+    assign eff_kernel = lap_sel ? LAP_KERNEL : conv_kernel;
+    assign eff_shift  = lap_sel ? 4'd0 : conv_shift;
+    assign eff_bias   = lap_sel ? 8'sd0 : conv_bias;
+
     conv_engine conv_r(
         .p0(p0_r), .p1(p1_r), .p2(p2_r), .p3(p3_r), .p4(p4_r), .p5(p5_r), .p6(p6_r), .p7(p7_r), .p8(p8_r),
-        .kernel(conv_kernel), .shift(conv_shift), .bias(conv_bias), .out(red_conv)
+        .kernel(eff_kernel), .shift(eff_shift), .bias(eff_bias), .out(red_conv)
     );
     conv_engine conv_g(
         .p0(p0_g), .p1(p1_g), .p2(p2_g), .p3(p3_g), .p4(p4_g), .p5(p5_g), .p6(p6_g), .p7(p7_g), .p8(p8_g),
-        .kernel(conv_kernel), .shift(conv_shift), .bias(conv_bias), .out(green_conv)
+        .kernel(eff_kernel), .shift(eff_shift), .bias(eff_bias), .out(green_conv)
     );
     conv_engine conv_b(
         .p0(p0_b), .p1(p1_b), .p2(p2_b), .p3(p3_b), .p4(p4_b), .p5(p5_b), .p6(p6_b), .p7(p7_b), .p8(p8_b),
-        .kernel(conv_kernel), .shift(conv_shift), .bias(conv_bias), .out(blue_conv)
+        .kernel(eff_kernel), .shift(eff_shift), .bias(eff_bias), .out(blue_conv)
     );
 
-    //On-screen display (filter name + frame counter). Toggle with the H key.
-    logic [7:0] keycode, keycode_meta, keycode_last, keycode_prev;
+    //On-screen display: filter name, plus the kernel editor while the K filter is active. Toggle with the H key.
     logic       hud_en = 1'b1;
     logic [4:0] hud_name;
-    logic       hud_box, hud_text;
+    logic [2:0] hud_kind;
 
     always_comb begin
         case (keycode_last)
@@ -497,30 +516,39 @@ module top_level(
             8'h12: hud_name = 5'd8;    // O sharpen
             8'h13: hud_name = 5'd9;    // P emboss gray
             8'h2f: hud_name = 5'd10;   // [ emboss colour
-            8'h1e, 8'h1f, 8'h20, 8'h21, 8'h22, 8'h23, 8'h24, 8'h25, 8'h26, 8'h27:
-                   hud_name = (conv_preset == 4'd0 || conv_preset > 4'd9) ? 5'd11 : (5'd11 + {1'b0, conv_preset});
+            8'h0e: hud_name = 5'd11;   // K custom kernel
+            8'h30: hud_name = 5'd12;   // ] laplacian
             default: hud_name = 5'd0;
         endcase
     end
 
     hud hud_i(
-        .clk(clk_25MHz),
-        .rst(reset_ah),
-        .frame_pulse(vsync_2),
         .drawX_d(drawX_2),
         .drawY_d(drawY_2),
         .name_idx(hud_name),
-        .box(hud_box),
-        .text(hud_text)
+        .kview(keycode_last == 8'h0e),
+        .edit(conv_edit),
+        .cursor(conv_cursor),
+        .kernel(conv_kernel),
+        .shift(conv_shift),
+        .bias(conv_bias),
+        .kind(hud_kind)
     );
 
-    // Overlay: lit glyph pixels white, panel dims the video behind the text
+    // Overlay colours. Panel background dims the video behind it.
     always_comb begin
-        if (hud_en && hud_box)
-            {red_filtered, green_filtered, blue_filtered} = hud_text ? 12'hFFF
-                : {2'b00, red_mux[3:2], 2'b00, green_mux[3:2], 2'b00, blue_mux[3:2]};
-        else
-            {red_filtered, green_filtered, blue_filtered} = {red_mux, green_mux, blue_mux};
+        {red_filtered, green_filtered, blue_filtered} = {red_mux, green_mux, blue_mux};
+        if (hud_en) begin
+            case (hud_kind)
+                3'd1: {red_filtered, green_filtered, blue_filtered} = {2'b00, red_mux[3:2], 2'b00, green_mux[3:2], 2'b00, blue_mux[3:2]};
+                3'd2: {red_filtered, green_filtered, blue_filtered} = 12'h888;   // border
+                3'd3: {red_filtered, green_filtered, blue_filtered} = 12'hFFF;   // text
+                3'd4: {red_filtered, green_filtered, blue_filtered} = 12'h999;   // labels, divider, hint
+                3'd5: {red_filtered, green_filtered, blue_filtered} = 12'hFB0;   // cursor background
+                3'd6: {red_filtered, green_filtered, blue_filtered} = 12'h000;   // text on the cursor
+                default: ;
+            endcase
+        end
     end
 
     //Filter selection MUX
@@ -538,7 +566,7 @@ module top_level(
             8'h12: {red_mux, green_mux, blue_mux} = border ? {red_raw, green_raw, blue_raw} : {red_sharp, green_sharp, blue_sharp};
             8'h13: {red_mux, green_mux, blue_mux} = border ? {gray, gray, gray} : {gray_emboss, gray_emboss, gray_emboss};
             8'h2f: {red_mux, green_mux, blue_mux} = border ? {red_raw, green_raw, blue_raw} : {red_emboss, green_emboss, blue_emboss};
-            8'h1e, 8'h1f, 8'h20, 8'h21, 8'h22, 8'h23, 8'h24, 8'h25, 8'h26, 8'h27:
+            8'h0e, 8'h30:   // K = custom kernel, ] = Laplacian (both use the convolution engines)
                 {red_mux, green_mux, blue_mux} = border ? {red_raw, green_raw, blue_raw} : {red_conv, green_conv, blue_conv};
             default: {red_mux, green_mux, blue_mux} = {red_raw, green_raw, blue_raw};
         endcase
@@ -557,7 +585,7 @@ module top_level(
                  keycode == 8'h15 || keycode == 8'h17 || keycode == 8'h1c ||
                  keycode == 8'h18 || keycode == 8'h0c || keycode == 8'h12 ||
                  keycode == 8'h13 || keycode == 8'h2f ||
-                 (keycode >= 8'h1e && keycode <= 8'h27))   // '1'..'9' = kernel presets, '0' = custom kernel
+                 keycode == 8'h0e || keycode == 8'h30)    // K (custom kernel), ] (Laplacian)
             keycode_last <= keycode;
     end
     

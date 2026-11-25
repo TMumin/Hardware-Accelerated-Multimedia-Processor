@@ -10,12 +10,13 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source top_level.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 373.695 ; gain = 66.297
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 372.641 ; gain = 63.488
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/IPs'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.cache/ip 
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 436.715 ; gain = 39.219
 Command: read_checkpoint -auto_incremental -incremental C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/utils_1/imports/synth_1/top_level.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/utils_1/imports/synth_1/top_level.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -28,61 +29,61 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 167488
+INFO: [Synth 8-7075] Helper process launched with PID 152916
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1236.637 ; gain = 408.621
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1238.137 ; gain = 407.941
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_level' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'top_level' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:8]
 INFO: [Synth 8-6157] synthesizing module 'mb_block' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2684]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_3' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_3_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_3' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_3_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_2' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_2' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_mdm_1_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_mdm_1_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_microblaze_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_microblaze_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_3' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_3' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_2' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_2' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_mdm_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_mdm_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_microblaze_0_axi_intc_1_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_1' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3779]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TK4492' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:251]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:251]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_0' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:251]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TK4492' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_UT2LJ' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:312]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_1_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:551]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:551]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_1' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:551]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_UT2LJ' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:312]
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1ST4AV9' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:612]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_2' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_2' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_2' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_2' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_2_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:851]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:851]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_2' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:851]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1ST4AV9' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:612]
 INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1VI1NO' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:912]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_3' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_3_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_3' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_3' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_3' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_3_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1151]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1151]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_3' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1151]
 INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1VI1NO' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:912]
 INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1SCR8U8' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1212]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_4' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_4_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_4' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_4_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_4' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_4' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_4_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1451]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1451]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_4' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1451]
@@ -90,29 +91,29 @@ INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1SCR8U8' (0#1) [
 INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_2FAMHT' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1512]
 INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_2FAMHT' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1512]
 INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1QRRYF7' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1784]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_5' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_5_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_5' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_5_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_5' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_5' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_5_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2023]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2023]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_5' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2023]
 INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1QRRYF7' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:1784]
 INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_3PYGGY' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2084]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_6' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_6_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_6' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_6_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_6' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_6' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_6_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2323]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2323]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_6' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2323]
 INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_3PYGGY' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2084]
 INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1XO1QIY' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2384]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_7' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_7_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_7' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_7_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_7' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_7_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_7' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_7_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2623]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2623]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_7' has 60 connections declared, but only 58 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2623]
 INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1XO1QIY' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2384]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6225]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_8' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_8_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_8' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_auto_pc_8_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_auto_pc_8' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_8_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_auto_pc_8' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_auto_pc_8_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'mb_block_auto_pc_8' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6448]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'mb_block_auto_pc_8' is unconnected for instance 'auto_pc' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6448]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'mb_block_auto_pc_8' has 56 connections declared, but only 54 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6448]
@@ -121,11 +122,11 @@ INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1XEVI91' [c:/Users/ta
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1XEVI91' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6505]
 INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_4MLGLJ' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6777]
 INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_4MLGLJ' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:6777]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_xbar_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_xbar_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_1' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_xbar_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_1' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_xbar_1_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_1' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3779]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_mig_7series_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_mig_7series_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_mig_7series_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mig_7series_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mig_7series_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_mig_7series_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'ui_addn_clk_1' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3649]
 WARNING: [Synth 8-7071] port 'ui_addn_clk_2' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3649]
 WARNING: [Synth 8-7071] port 'ui_addn_clk_3' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3649]
@@ -136,22 +137,22 @@ WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'mb_block_mig_7series_0_0' i
 WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3649]
 WARNING: [Synth 8-7071] port 'device_temp' of module 'mb_block_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3649]
 WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'mb_block_mig_7series_0_0' has 69 connections declared, but only 60 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3649]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_mig_7series_0_83M_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_rst_mig_7series_0_83M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_mig_7series_0_83M_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_rst_mig_7series_0_83M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_mig_7series_0_83M_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_rst_mig_7series_0_83M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_mig_7series_0_83M_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_rst_mig_7series_0_83M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'mb_block_rst_mig_7series_0_83M_0' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3710]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_mig_7series_0_83M_0' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3710]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_mig_7series_0_83M_0' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3710]
 WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_83M' of module 'mb_block_rst_mig_7series_0_83M_0' has 10 connections declared, but only 7 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3710]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3718]
 WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3718]
 WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3718]
 WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3718]
 WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3718]
 WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_block_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3718]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/mb_block_axi_timer_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3747]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3747]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:3747]
@@ -161,14 +162,14 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/ta
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_xlconcat_0_0' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_0/synth/mb_block_xlconcat_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block' (0#1) [c:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.gen/sources_1/bd/mb_block/synth/mb_block.v:2684]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
-WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:137]
-WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:137]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-163240-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:141]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:141]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/.Xil/Vivado-171564-Taiseer-Laptop/realtime/hdmi_tx_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'image_rom' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/image_rom.sv:23]
 INFO: [Synth 8-3876] $readmem data file 'image.mem' is read successfully [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/image_rom.sv:30]
 INFO: [Synth 8-6155] done synthesizing module 'image_rom' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/image_rom.sv:23]
@@ -186,19 +187,21 @@ INFO: [Synth 8-6157] synthesizing module 'sharpen' [C:/Users/taise/Desktop/Homew
 INFO: [Synth 8-6155] done synthesizing module 'sharpen' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/sharpen.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'emboss' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/emboss.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'emboss' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/emboss.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'conv_regs' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_regs.sv:8]
-INFO: [Synth 8-6155] done synthesizing module 'conv_regs' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_regs.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'conv_regs' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_regs.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'conv_regs' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_regs.sv:9]
 INFO: [Synth 8-6157] synthesizing module 'conv_engine' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_engine.sv:6]
 INFO: [Synth 8-6155] done synthesizing module 'conv_engine' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/conv_engine.sv:6]
-INFO: [Synth 8-6157] synthesizing module 'hud' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'hud' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:110]
+INFO: [Synth 8-6157] synthesizing module 'hud_fmt4' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud_fmt4.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'hud_fmt4' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud_fmt4.sv:4]
 INFO: [Synth 8-6157] synthesizing module 'hud_font_rom' [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud_font_rom.sv:3]
 INFO: [Synth 8-226] default block is never used [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud_font_rom.sv:9]
 INFO: [Synth 8-6155] done synthesizing module 'hud_font_rom' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud_font_rom.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'hud' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:7]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:529]
-INFO: [Synth 8-6155] done synthesizing module 'top_level' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:4]
-WARNING: [Synth 8-3936] Found unconnected internal register 'name_sh_reg' and it is trimmed from '128' to '8' bits. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:96]
-WARNING: [Synth 8-3936] Found unconnected internal register 'nc_reg' and it is trimmed from '5' to '4' bits. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:95]
+INFO: [Synth 8-6155] done synthesizing module 'hud' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:12]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:557]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (0#1) [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/new/top_level.sv:8]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hint_sh_reg' and it is trimmed from '176' to '8' bits. [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.srcs/sources_1/imports/Downloads/hud.sv:108]
 WARNING: [Synth 8-7129] Port gpio_data[31] in module conv_regs is either unconnected or has no load
 WARNING: [Synth 8-7129] Port gpio_data[30] in module conv_regs is either unconnected or has no load
 WARNING: [Synth 8-7129] Port gpio_data[29] in module conv_regs is either unconnected or has no load
@@ -301,18 +304,18 @@ WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1472.211 ; gain = 644.195
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1477.414 ; gain = 647.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1472.211 ; gain = 644.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1477.414 ; gain = 647.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1472.211 ; gain = 644.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1477.414 ; gain = 647.219
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1472.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1477.414 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -389,24 +392,24 @@ Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/
 Finished Parsing XDC File [C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1516.105 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1496.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1516.105 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1496.453 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '12.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1520.590 ; gain = 692.574
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1499.562 ; gain = 669.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1520.590 ; gain = 692.574
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1499.562 ; gain = 669.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -551,28 +554,29 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/axi_gpio_conv. (constr
 Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1520.590 ; gain = 692.574
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1499.562 ; gain = 669.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1520.590 ; gain = 692.574
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1499.562 ; gain = 669.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 1     
 	   9 Input   16 Bit       Adders := 3     
 	   2 Input   16 Bit       Adders := 3     
-	   2 Input   11 Bit       Adders := 4     
+	   3 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
 	   2 Input   10 Bit       Adders := 8     
-	   2 Input    8 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 2     
 	   2 Input    6 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 2     
-	   2 Input    4 Bit       Adders := 7     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
 +---Registers : 
 	               72 Bit    Registers := 1     
-	               24 Bit    Registers := 1     
 	               12 Bit    Registers := 5     
 	               10 Bit    Registers := 10    
 	                8 Bit    Registers := 5     
@@ -581,21 +585,35 @@ Detailed RTL Component Info :
 +---ROMs : 
 	                    ROMs := 2     
 +---Muxes : 
-	   2 Input   72 Bit        Muxes := 2     
-	   2 Input   24 Bit        Muxes := 2     
-	   2 Input   12 Bit        Muxes := 6     
-	   2 Input    8 Bit        Muxes := 2     
+	   2 Input  127 Bit        Muxes := 1     
+	   2 Input   72 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   6 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 3     
-	   8 Input    6 Bit        Muxes := 1     
-	  10 Input    6 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 2     
-	  13 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 26    
-	  13 Input    4 Bit        Muxes := 2     
-	  10 Input    4 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 3     
-	   3 Input    1 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 28    
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 4     
+	  11 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 3     
+	  10 Input    4 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -613,7 +631,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1542.445 ; gain = 714.430
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:29 . Memory (MB): peak = 1552.633 ; gain = 722.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -626,7 +644,6 @@ ROM: Preliminary Mapping Report
 |image_rom    | data_reg   | 131072x12     | Block RAM      | 
 |image_rom    | data_w_reg | 131072x12     | Block RAM      | 
 |hud_font_rom | bits       | 1024x7        | LUT            | 
-|hud          | font/bits  | 1024x7        | LUT            | 
 +-------------+------------+---------------+----------------+
 
 
@@ -652,13 +669,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1544.820 ; gain = 716.805
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 1556.988 ; gain = 726.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1615.035 ; gain = 787.020
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:39 . Memory (MB): peak = 1621.527 ; gain = 791.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -733,7 +750,7 @@ INFO: [Synth 8-7052] The timing for the instance image_rom_i/data_w_reg_1_9 (imp
 INFO: [Synth 8-7052] The timing for the instance image_rom_i/data_w_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance image_rom_i/data_w_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 1649.934 ; gain = 819.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -751,37 +768,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished IO Insertion : Time (s): cpu = 00:01:45 ; elapsed = 00:01:52 . Memory (MB): peak = 1651.852 ; gain = 821.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:45 ; elapsed = 00:01:52 . Memory (MB): peak = 1651.852 ; gain = 821.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1651.852 ; gain = 821.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1651.852 ; gain = 821.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1651.852 ; gain = 821.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1651.852 ; gain = 821.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -834,45 +851,45 @@ Report Cell Usage:
 |22    |mb_block_mig_7series_0         |     1|
 |23    |mb_block_rst_mig_7series_0_83M |     1|
 |24    |mb_block_xbar                  |     1|
-|25    |CARRY4                         |   342|
-|26    |LUT1                           |    43|
-|27    |LUT2                           |   351|
-|28    |LUT3                           |   542|
-|29    |LUT4                           |   500|
-|30    |LUT5                           |   425|
-|31    |LUT6                           |   922|
-|32    |MUXF7                          |    89|
-|33    |MUXF8                          |    13|
+|25    |CARRY4                         |   352|
+|26    |LUT1                           |    46|
+|27    |LUT2                           |   274|
+|28    |LUT3                           |   504|
+|29    |LUT4                           |   626|
+|30    |LUT5                           |   585|
+|31    |LUT6                           |  1005|
+|32    |MUXF7                          |    25|
+|33    |MUXF8                          |     4|
 |34    |RAM64M                         |   120|
 |35    |RAMB36E1                       |    60|
 |71    |FDCE                           |    29|
-|72    |FDRE                           |   608|
+|72    |FDRE                           |   584|
 |73    |FDSE                           |     4|
 |74    |IBUF                           |     5|
 |75    |OBUF                           |     5|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1651.852 ; gain = 821.656
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 104 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:58 . Memory (MB): peak = 1644.547 ; gain = 768.152
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1644.547 ; gain = 816.531
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:01:48 . Memory (MB): peak = 1651.852 ; gain = 799.508
+Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:01:53 . Memory (MB): peak = 1651.852 ; gain = 821.656
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1651.355 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 624 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.177 . Memory (MB): peak = 1663.930 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 561 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1655.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1667.574 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 120 instances were transformed.
   RAM64M => RAM64M (RAMD64E(x4)): 120 instances
 
-Synth Design complete, checksum: 9a5cdfb9
+Synth Design complete, checksum: eef571e8
 INFO: [Common 17-83] Releasing license: Synthesis
-186 Infos, 174 Warnings, 0 Critical Warnings and 0 Errors encountered.
+189 Infos, 173 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1655.004 ; gain = 1202.422
+synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:02:07 . Memory (MB): peak = 1667.574 ; gain = 1214.531
 INFO: [Common 17-1381] The checkpoint 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vivado/Image_Processor.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 18:11:16 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 24 20:35:45 2026...

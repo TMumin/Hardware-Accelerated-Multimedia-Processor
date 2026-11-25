@@ -1,44 +1,33 @@
 `timescale 1ns / 1ps
-// On-screen display: two lines of 8x16 text in the top-left corner.
-//   line 0:  FILTER: <name>        line 1:  FRAME:  <6-digit frame count>
-// Inputs drawX_d/drawY_d must be the pixel coordinates aligned with the output pixel (t=2 in top_level).
-// Outputs are combinational from those coordinates: `box` = inside the dimmed background panel,
-// `text` = this pixel is a lit glyph pixel.
+// On-screen display: a small panel in the top-left corner.
+//   * Always: the active filter name.
+//   * Kernel view (K filter): a divider, the 3x3 kernel, SHIFT and BIAS.
+//   * Editing: the selected value is highlighted and a one-line key hint is added.
+//
+// Purely combinational. drawX_d/drawY_d must be the coordinates aligned with the output pixel.
+// `kind` tells the top level what colour this pixel should be:
+//   0 = not part of the panel     1 = panel background (dimmed video)   2 = border
+//   3 = bright text               4 = dim text / divider                5 = cursor background
+//   6 = text on the cursor
 module hud #(
     parameter int X0 = 16,
     parameter int Y0 = 16
 )(
-    input  logic       clk,         // 25 MHz
-    input  logic       rst,
-    input  logic       frame_pulse, // high during vertical sync (any polarity; rising edge counts a frame)
-    input  logic [9:0] drawX_d,
-    input  logic [9:0] drawY_d,
-    input  logic [4:0] name_idx,
-    output logic       box,
-    output logic       text
+    input  logic [9:0]         drawX_d,
+    input  logic [9:0]         drawY_d,
+    input  logic [4:0]         name_idx,
+    input  logic               kview,      // show the kernel block
+    input  logic               edit,       // editor open: highlight the cursor field and show the key hint
+    input  logic [3:0]         cursor,     // 0..8 kernel cell, 9 shift, 10 bias
+    input  logic [71:0]        kernel,     // k_i = kernel[8*i +: 8], signed
+    input  logic [3:0]         shift,
+    input  logic signed [7:0]  bias,
+    output logic [2:0]         kind
 );
-    localparam int COLS = 24;
-    localparam int W = COLS * 8;    // 192
-    localparam int H = 32;          // two 16-row lines
-
-    // ---------------- frame counter (6-digit BCD) ----------------
-    logic        fp_q;
-    logic [23:0] bcd, bcd_next;
-    logic        c;
-    logic [3:0]  nd;
-    always_comb begin
-        c = 1'b1;
-        for (int i = 0; i < 6; i++) begin
-            nd = bcd[4*i +: 4] + {3'b000, c};
-            if (nd == 4'd10) begin nd = 4'd0; c = 1'b1; end else c = 1'b0;
-            bcd_next[4*i +: 4] = nd;
-        end
-    end
-    always_ff @(posedge clk) begin
-        fp_q <= frame_pulse;
-        if (rst)                         bcd <= '0;
-        else if (frame_pulse && !fp_q)   bcd <= bcd_next;
-    end
+    localparam int COLS  = 22;                    // text columns (8 px each)
+    localparam int PADX  = 8;
+    localparam int PADY  = 8;
+    localparam int PANEL_W = 2*PADX + COLS*8;     // 192
 
     // ---------------- filter names (16 chars each, space padded) ----------------
     function automatic logic [127:0] name_of(input logic [4:0] i);
@@ -55,67 +44,139 @@ module hud #(
             5'd9:  name_of = "EMBOSS GRAY     ";
             5'd10: name_of = "EMBOSS COLOR    ";
             5'd11: name_of = "CUSTOM KERNEL   ";
-            5'd12: name_of = "K1 IDENTITY     ";
-            5'd13: name_of = "K2 GAUSSIAN 3X3 ";
-            5'd14: name_of = "K3 SHARPEN      ";
-            5'd15: name_of = "K4 EMBOSS       ";
-            5'd16: name_of = "K5 LAPLACIAN    ";
-            5'd17: name_of = "K6 SOBEL X      ";
-            5'd18: name_of = "K7 SOBEL Y      ";
-            5'd19: name_of = "K8 STRONG BLUR  ";
-            5'd20: name_of = "K9 SOFT LAPLACE ";
+            5'd12: name_of = "LAPLACIAN       ";
             default: name_of = "                ";
         endcase
     endfunction
 
-    // ---------------- character / glyph lookup ----------------
-    localparam logic [9:0] X0_L = X0;
-    localparam logic [9:0] Y0_L = Y0;
-    logic [9:0] dx, dy;
-    logic [4:0] nc;
+    localparam logic [175:0] HINT = "ARROWS MOVE  +/- EDIT ";   // 22 characters
+
+    // ---------------- panel geometry ----------------
+    logic [3:0] nlines;
+    logic [10:0] panel_h, ybot;
+    logic       in_panel, border;
+
+    assign nlines  = !kview ? 4'd1 : (edit ? 4'd8 : 4'd7);
+    assign panel_h = 11'd16 + {3'b0, nlines, 4'b0000};            // 2*PADY + 16*lines
+    assign ybot    = Y0 + panel_h;
+
+    assign in_panel = (drawX_d >= X0) && (drawX_d < X0 + PANEL_W) && (drawY_d >= Y0) && ({1'b0, drawY_d} < ybot);
+    assign border   = in_panel && ((drawX_d == X0) || (drawX_d == X0 + PANEL_W - 1) ||
+                                   (drawY_d == Y0) || ({1'b0, drawY_d} == ybot - 11'd1));
+
+    // ---------------- text grid position ----------------
+    localparam int TX0 = X0 + PADX;
+    localparam int TY0 = Y0 + PADY;
+    logic [9:0] tx, ty;
     logic       in_text;
     logic [4:0] col;
-    logic       line;
-    logic [7:0] ch;
-    logic [127:0] name_vec, name_sh;
-    logic [3:0] digit;
-    logic [7:0] glyph_bits;
+    logic [2:0] ln;
+    logic [3:0] row;
+    logic [2:0] px;
 
-    assign dx = drawX_d - X0_L;
-    assign dy = drawY_d - Y0_L;
-    assign in_text = (drawX_d >= X0) && (drawX_d < X0 + W) && (drawY_d >= Y0) && (drawY_d < Y0 + H);
-    assign box     = (drawX_d + 10'd4 >= X0) && (drawX_d < X0 + W + 4) &&
-                     (drawY_d + 10'd4 >= Y0) && (drawY_d < Y0 + H + 4);
+    assign tx = drawX_d - TX0[9:0];
+    assign ty = drawY_d - TY0[9:0];
+    assign in_text = (drawX_d >= TX0) && (drawX_d < TX0 + COLS*8) &&
+                     (drawY_d >= TY0) && ({1'b0, drawY_d} < TY0 + {3'b0, nlines, 4'b0000});
+    assign col = tx[7:3];
+    assign ln  = ty[6:4];
+    assign row = ty[3:0];
+    assign px  = tx[2:0];
 
-    assign col  = dx[7:3];
-    assign line = dy[4];
+    // ---------------- what character goes here ----------------
+    logic [127:0] name_vec;
+    logic [4:0]   nc;
+    logic [3:0]   fld;          // field index 0..10, 15 = none
+    logic [1:0]   fpos;         // character within the 4-wide number field
+    logic [7:0]   ch;
+    logic         bright;       // text colour
+    logic         divider;
+    logic         is_field;
+    logic [31:0]  numtxt;
+    logic signed [7:0] val;
+    logic [175:0] hint_sh;
 
     always_comb begin
         name_vec = name_of(name_idx);
-        nc       = col - 5'd8;                                  // name character index 0..15 for columns 8..23
-        name_sh  = name_vec >> {(4'd15 - nc[3:0]), 3'b000};
-        digit    = 4'd0;
+        nc       = col;                                  // name occupies columns 0..15
+        fld      = 4'd15;
+        fpos     = 2'd0;
         ch       = 8'h20;
-        if (!line) begin
-            case (col)
-                5'd0: ch = "F"; 5'd1: ch = "I"; 5'd2: ch = "L"; 5'd3: ch = "T";
-                5'd4: ch = "E"; 5'd5: ch = "R"; 5'd6: ch = ":"; 5'd7: ch = " ";
-                default: ch = name_sh[7:0];
-            endcase
-        end else begin
-            case (col)
-                5'd0: ch = "F"; 5'd1: ch = "R"; 5'd2: ch = "A"; 5'd3: ch = "M";
-                5'd4: ch = "E"; 5'd5: ch = ":"; 5'd6: ch = " "; 5'd7: ch = " ";
-                5'd8, 5'd9, 5'd10, 5'd11, 5'd12, 5'd13: begin
-                    digit = bcd[4*(5 - (col - 5'd8)) +: 4];     // most significant digit first
-                    ch    = 8'h30 + {4'b0, digit};
-                end
-                default: ch = 8'h20;
-            endcase
-        end
+        bright   = 1'b1;
+        divider  = 1'b0;
+        is_field = 1'b0;
+        hint_sh  = HINT >> {(5'd21 - col), 3'b000};
+
+        case (ln)
+            3'd0: ch = (col < 5'd16) ? (name_vec >> {(4'd15 - col[3:0]), 3'b000}) : 8'h20;
+            3'd1: divider = kview;
+            3'd2, 3'd3, 3'd4: begin
+                // kernel rows: cells start at columns 3, 9, 15 (4 characters wide)
+                case (col)
+                    5'd3,  5'd4,  5'd5,  5'd6:  begin is_field = 1; fld = 4'd3*(ln-3'd2) + 4'd0; fpos = col[1:0] - 2'd3; end
+                    5'd9,  5'd10, 5'd11, 5'd12: begin is_field = 1; fld = 4'd3*(ln-3'd2) + 4'd1; fpos = col[1:0] - 2'd1; end
+                    5'd15, 5'd16, 5'd17, 5'd18: begin is_field = 1; fld = 4'd3*(ln-3'd2) + 4'd2; fpos = col[1:0] - 2'd3; end
+                    default: ;
+                endcase
+            end
+            3'd5: begin   // SHIFT
+                bright = 1'b0;
+                case (col)
+                    5'd3: ch = "S"; 5'd4: ch = "H"; 5'd5: ch = "I"; 5'd6: ch = "F"; 5'd7: ch = "T";
+                    5'd9, 5'd10, 5'd11, 5'd12: begin is_field = 1; fld = 4'd9; fpos = col[1:0] - 2'd1; bright = 1'b1; end
+                    default: ;
+                endcase
+            end
+            3'd6: begin   // BIAS
+                bright = 1'b0;
+                case (col)
+                    5'd3: ch = "B"; 5'd4: ch = "I"; 5'd5: ch = "A"; 5'd6: ch = "S";
+                    5'd9, 5'd10, 5'd11, 5'd12: begin is_field = 1; fld = 4'd10; fpos = col[1:0] - 2'd1; bright = 1'b1; end
+                    default: ;
+                endcase
+            end
+            3'd7: begin   // key hint (only present while editing)
+                bright = 1'b0;
+                ch = hint_sh[7:0];
+            end
+            default: ;
+        endcase
+
+        // value for the selected field
+        case (fld)
+            4'd0:  val = kernel[7:0];
+            4'd1:  val = kernel[15:8];
+            4'd2:  val = kernel[23:16];
+            4'd3:  val = kernel[31:24];
+            4'd4:  val = kernel[39:32];
+            4'd5:  val = kernel[47:40];
+            4'd6:  val = kernel[55:48];
+            4'd7:  val = kernel[63:56];
+            4'd8:  val = kernel[71:64];
+            4'd9:  val = {4'b0000, shift};
+            4'd10: val = bias;
+            default: val = 8'sd0;
+        endcase
+
+        if (is_field) ch = numtxt >> {(2'd3 - fpos), 3'b000};
     end
 
-    hud_font_rom font (.glyph(ch[5:0] - 6'h20), .row(dy[3:0]), .bits(glyph_bits));
+    hud_fmt4 fmt (.v(val), .s(numtxt));
 
-    assign text = in_text && glyph_bits[3'd7 - dx[2:0]];
+    logic [7:0] glyph_bits;
+    hud_font_rom font (.glyph(ch[5:0] - 6'h20), .row(row), .bits(glyph_bits));
+
+    // ---------------- final pixel kind ----------------
+    logic glyph_on, cell_hl;
+    assign glyph_on = in_text && glyph_bits[3'd7 - px];
+    assign cell_hl  = in_text && is_field && edit && (fld == cursor);
+
+    always_comb begin
+        if (!in_panel)                 kind = 3'd0;
+        else if (border)               kind = 3'd2;
+        else if (cell_hl)              kind = glyph_on ? 3'd6 : 3'd5;
+        else if (in_text && divider)   kind = (row == 4'd7) ? 3'd4 : 3'd1;
+        else if (glyph_on)             kind = bright ? 3'd3 : 3'd4;
+        else                           kind = 3'd1;
+    end
 endmodule

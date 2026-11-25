@@ -1,14 +1,5 @@
-18:26:53 **** Incremental Build of configuration Debug for project processor ****
+20:51:02 **** Incremental Build of configuration Debug for project processor ****
 make all 
-'Building file: ../src/lw_usb/HID.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/HID.o" -IC:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/HID.d" -MT"src/lw_usb/HID.o" -o "src/lw_usb/HID.o" "../src/lw_usb/HID.c"
-../src/lw_usb/HID.c:9:1: warning: braces around scalar initializer
-    9 | HID_DEVICE hid_device = { { 0 } };
-      | ^~~~~~~~~~
-../src/lw_usb/HID.c:9:1: note: (near initialization for 'hid_device.addr')
-'Finished building: ../src/lw_usb/HID.c'
-' '
 'Building file: ../src/lw_usb/MAX3421E.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/MAX3421E.o" -IC:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/sw/top_level/standalone_microblaze_0/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/MAX3421E.d" -MT"src/lw_usb/MAX3421E.o" -o "src/lw_usb/MAX3421E.o" "../src/lw_usb/MAX3421E.c"
@@ -84,9 +75,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/taise/Desktop/Homework/SEM_3/ECE_
 'Invoking: MicroBlaze Print Size'
 mb-size processor.elf  |tee "processor.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 132224	   1984	   2816	 137024	  21740	processor.elf
+ 133732	   2004	   2832	 138568	  21d48	processor.elf
 'Finished building: processor.elf.size'
 ' '
 
-18:26:58 Build Finished (took 5s.226ms)
+20:51:05 Build Finished (took 3s.635ms)
 

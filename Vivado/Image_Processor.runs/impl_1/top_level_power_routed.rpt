@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Mon Nov 23 18:15:27 2026
+| Date             : Tue Nov 24 20:45:08 2026
 | Host             : Taiseer-Laptop running 64-bit major release  (build 9200)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
 | Design           : top_level
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.050        |
+| Total On-Chip Power (W)  | 1.049        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.968        |
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.051 |       28 |       --- |             --- |
-| Slice Logic              |     0.025 |    37709 |       --- |             --- |
-|   LUT as Logic           |     0.022 |    14964 |     32600 |           45.90 |
-|   Register               |     0.001 |    13852 |     65200 |           21.25 |
-|   CARRY4                 |    <0.001 |      813 |      8150 |            9.98 |
+| Clocks                   |     0.050 |       28 |       --- |             --- |
+| Slice Logic              |     0.025 |    37866 |       --- |             --- |
+|   LUT as Logic           |     0.022 |    15197 |     32600 |           46.62 |
+|   Register               |     0.001 |    13820 |     65200 |           21.20 |
+|   CARRY4                 |    <0.001 |      823 |      8150 |           10.10 |
 |   LUT as Distributed RAM |    <0.001 |     1004 |      9600 |           10.46 |
-|   F7/F8 Muxes            |    <0.001 |      289 |     32600 |            0.89 |
-|   LUT as Shift Register  |    <0.001 |      718 |      9600 |            7.48 |
-|   Others                 |    <0.001 |     1654 |       --- |             --- |
-| Signals                  |     0.032 |    28299 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      216 |     32600 |            0.66 |
+|   LUT as Shift Register  |    <0.001 |      719 |      9600 |            7.49 |
+|   Others                 |    <0.001 |     1653 |       --- |             --- |
+| Signals                  |     0.032 |    28630 |       --- |             --- |
 | Block RAM                |     0.021 |       64 |        75 |           85.33 |
 | MMCM                     |     0.205 |        2 |         5 |           40.00 |
 | PLL                      |     0.116 |        1 |         5 |           20.00 |
@@ -70,7 +70,7 @@ Table of Contents
 | PHASER                   |     0.113 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.081 |          |           |                 |
-| Total                    |     1.050 |          |           |                 |
+| Total                    |     1.049 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -176,7 +176,9 @@ Table of Contents
 |   clk_wiz                            |     0.106 |
 |     inst                             |     0.106 |
 |   image_rom_i                        |     0.012 |
-|   mb_block_i                         |     0.711 |
+|   mb_block_i                         |     0.710 |
+|     axi_gpio_conv                    |     0.001 |
+|       U0                             |     0.001 |
 |     gpio_usb_keycode                 |     0.002 |
 |       U0                             |     0.002 |
 |     microblaze_0                     |     0.036 |
@@ -186,7 +188,7 @@ Table of Contents
 |     microblaze_0_axi_periph          |     0.024 |
 |       m00_couplers                   |     0.003 |
 |       m01_couplers                   |     0.002 |
-|       m02_couplers                   |     0.003 |
+|       m02_couplers                   |     0.002 |
 |       m03_couplers                   |     0.002 |
 |       m04_couplers                   |     0.002 |
 |       m06_couplers                   |     0.002 |
@@ -195,8 +197,8 @@ Table of Contents
 |       xbar                           |     0.006 |
 |     mig_7series_0                    |     0.639 |
 |       u_mb_block_mig_7series_0_0_mig |     0.639 |
-|     spi_usb                          |     0.004 |
-|       U0                             |     0.004 |
+|     spi_usb                          |     0.003 |
+|       U0                             |     0.003 |
 |     timer_usb_axi                    |     0.002 |
 |       U0                             |     0.002 |
 |   vga_to_hdmi                        |     0.132 |

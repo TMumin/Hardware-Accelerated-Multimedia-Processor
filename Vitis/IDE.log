@@ -333,3 +333,105 @@ con
 ----------------End of Script----------------
 
 18:27:16 INFO  : Disconnected from the channel tcfchan#2.
+19:56:27 DEBUG : Logs will be stored at 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/IDE.log'.
+19:56:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\temp_xsdb_launch_script.tcl
+19:56:34 INFO  : XSCT server has started successfully.
+19:56:34 INFO  : plnx-install-location is set to ''
+19:56:34 INFO  : Successfully done setting XSCT server connection channel  
+19:56:34 INFO  : Successfully done setting workspace for the tool. 
+19:56:37 INFO  : Registering command handlers for Vitis TCF services
+19:56:38 INFO  : Platform repository initialization has completed.
+19:56:46 INFO  : Successfully done query RDI_DATADIR 
+20:24:27 INFO  : Hardware specification for platform project 'top_level' is updated.
+20:25:15 INFO  : Result from executing command 'getProjects': top_level
+20:25:15 INFO  : Result from executing command 'getPlatforms': top_level|C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/top_level.xpfm
+20:25:16 INFO  : Checking for BSP changes to sync application flags for project 'processor'...
+20:25:22 INFO  : The hardware specification used by project 'processor' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:25:22 INFO  : The file 'C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\processor\_ide\bitstream\top_level.bit' stored in project is removed.
+20:25:22 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\processor\_ide\bitstream' in project 'processor'.
+20:25:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:25:34 INFO  : Jtag cable 'RealDigital Boo 887100000004A' is selected.
+20:25:34 INFO  : 'jtag frequency' command is executed.
+20:25:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000004A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:25:35 INFO  : Device configured successfully with "C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/_ide/bitstream/top_level.bit"
+20:25:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/hw/top_level.xsa'.
+20:25:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:25:36 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:36 INFO  : System reset is completed.
+20:25:39 INFO  : 'after 3000' command is executed.
+20:25:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:39 INFO  : The application 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/Debug/processor.elf' is downloaded to processor 'microblaze_0'.
+20:25:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000004A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/_ide/bitstream/top_level.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/hw/top_level.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/Debug/processor.elf
+----------------End of Script----------------
+
+20:25:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:39 INFO  : 'con' command is executed.
+20:25:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:25:39 INFO  : Disconnected from the channel tcfchan#2.
+20:49:51 DEBUG : Logs will be stored at 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/IDE.log'.
+20:49:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\temp_xsdb_launch_script.tcl
+20:49:54 INFO  : XSCT server has started successfully.
+20:49:54 INFO  : plnx-install-location is set to ''
+20:49:54 INFO  : Successfully done setting XSCT server connection channel  
+20:49:54 INFO  : Successfully done setting workspace for the tool. 
+20:50:00 INFO  : Registering command handlers for Vitis TCF services
+20:50:01 INFO  : Platform repository initialization has completed.
+20:50:02 INFO  : Successfully done query RDI_DATADIR 
+20:50:47 INFO  : Hardware specification for platform project 'top_level' is updated.
+20:51:01 INFO  : Result from executing command 'getProjects': top_level
+20:51:01 INFO  : Result from executing command 'getPlatforms': top_level|C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/top_level.xpfm
+20:51:01 INFO  : Checking for BSP changes to sync application flags for project 'processor'...
+20:51:06 INFO  : The hardware specification used by project 'processor' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:51:06 INFO  : The file 'C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\processor\_ide\bitstream\top_level.bit' stored in project is removed.
+20:51:06 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\taise\Desktop\Homework\SEM_3\ECE_385\Image_Processor\Vitis\processor\_ide\bitstream' in project 'processor'.
+20:51:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:51:23 INFO  : Jtag cable 'RealDigital Boo 887100000004A' is selected.
+20:51:23 INFO  : 'jtag frequency' command is executed.
+20:51:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000004A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:51:25 INFO  : Device configured successfully with "C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/_ide/bitstream/top_level.bit"
+20:51:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:51:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/hw/top_level.xsa'.
+20:51:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:51:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:51:25 INFO  : System reset is completed.
+20:51:28 INFO  : 'after 3000' command is executed.
+20:51:28 INFO  : Context for processor 'microblaze_0' is selected.
+20:51:29 INFO  : The application 'C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/Debug/processor.elf' is downloaded to processor 'microblaze_0'.
+20:51:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000004A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/_ide/bitstream/top_level.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/top_level/export/top_level/hw/top_level.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/taise/Desktop/Homework/SEM_3/ECE_385/Image_Processor/Vitis/processor/Debug/processor.elf
+----------------End of Script----------------
+
+20:51:29 INFO  : Context for processor 'microblaze_0' is selected.
+20:51:29 INFO  : 'con' command is executed.
+20:51:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:51:29 INFO  : Disconnected from the channel tcfchan#2.
